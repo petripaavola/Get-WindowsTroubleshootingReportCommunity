@@ -6,6 +6,8 @@ The **Ultimate Windows and Intune Troubleshooting Tool** for analyzing and visua
 
 Yes, there are lot's of thing to do to make this perfect but we'll get there some day :)
 
+**And please share EventRules you have created**
+
 ## Features
 - **Event Log Support**: Reads Windows Event logs either from live systems or from diagnostics packages (.zip) downloaded via Intune.
 - **Log File Support**: Reads any structured log file format, provided it contains dateTime and message information.
