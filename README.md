@@ -132,6 +132,34 @@ Here are a few example reports that show the capabilities of the tool:
   
 ---
 
+## Supported log files and Event logs
+
+- Script supports all Event Logs in **.evtx** -format either online or offline
+- .log files support for now is for **CMTrace** type log files found in Intune Management Extension and ConfigMgr logs
+
+Future support
+- .etl files. These are used in few places. Get-WinEvent will not show data but there are ways to get data to clear text
+- other .log files formats. Any structured .log file which has DateTime and message can be read by this tool
+  - support for other log files are created by need. For example dism.log, CBS.log and other logs are probably coming in the future
+  - goal is to make support for as many log file formats as possible
+
+---
+
+## Do I need to use Administrative rights
+
+- Tool works without admin rights when running on local machine, **but** normal user can't access all log files
+- Use Admin rights to get best result for local computer
+- offline reporting for example from Diagnostics-package does **not** require admin rights
+
+---
+
+## Windows PowerShell or Powershell (core)
+
+- This tool supports both Windows Powershell and Powershell (core)
+- development is mainly done with PowerShell (core) but both are tested
+
+---
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
