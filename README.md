@@ -8,6 +8,8 @@ Yes, there are lot's of thing to do to make this perfect but we'll get there som
 
 **And please share EventRules you have created**
 
+Download script package [Get-WindowsTroubleshootingReportCommunity_v0.7.zip](./Get-WindowsTroubleshootingReportCommunity_v0.7.zip)
+
 ## Features
 - **Event Log Support**: Reads Windows Event logs either from live systems or from diagnostics packages (.zip) downloaded via Intune.
 - **Log File Support**: Reads any structured log file format, provided it contains dateTime and message information.
