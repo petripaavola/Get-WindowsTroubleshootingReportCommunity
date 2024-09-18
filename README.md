@@ -20,25 +20,25 @@ Yes, there are lot's of thing to do to make this perfect but we'll get there som
 ## Usage
 
 ```powershell
-Get-WindowsTroubleshootingReportCommunity.ps1 -LastDays 1
+./Get-WindowsTroubleshootingReportCommunity.ps1 -LastDays 1
 ```
 ```powershell
-Get-WindowsTroubleshootingReportCommunity.ps1 -LastDays 30 -IncludeSelectedKnownRulesCategoriesOnly 'Updates - Install','Application installation - MSI','Power management - Start&Shutdown'
+./Get-WindowsTroubleshootingReportCommunity.ps1 -LastDays 30 -IncludeSelectedKnownRulesCategoriesOnly 'Updates - Install','Application installation - MSI','Power management - Start&Shutdown'
 ```
 ```powershell
-Get-WindowsTroubleshootingReportCommunity.ps1 -LastDays 180 -IncludeSelectedKnownRulesCategoriesOnly 'Updates - Install'
+./Get-WindowsTroubleshootingReportCommunity.ps1 -LastDays 180 -IncludeSelectedKnownRulesCategoriesOnly 'Updates - Install'
 ```
 ```powershell
-Get-WindowsTroubleshootingReportCommunity.ps1 -MinutesBeforeLastBoot 2 -MinutesAfterLastBoot 2 -AllEvents
+./Get-WindowsTroubleshootingReportCommunity.ps1 -MinutesBeforeLastBoot 2 -MinutesAfterLastBoot 2 -AllEvents
 ```
 ```powershell
-Get-WindowsTroubleshootingReportCommunity.ps1 -LastMinutes 5 -AllEvents
+./Get-WindowsTroubleshootingReportCommunity.ps1 -LastMinutes 5 -AllEvents
 ```
 ```powershell
-Get-WindowsTroubleshootingReportCommunity.ps1 -LogFilesFolder "C:\path\to\logs" -LastDays 2
+./Get-WindowsTroubleshootingReportCommunity.ps1 -LogFilesFolder "C:\path\to\logs" -LastDays 2
 ```
 ```powershell
-Get-WindowsTroubleshootingReportCommunity.ps1 -LogFilesFolder "C:\path\to\logs" -AllEvents -StartTime "2024-09-01 00:00:00" -EndTime "2024-09-01 00:05:00"
+./Get-WindowsTroubleshootingReportCommunity.ps1 -LogFilesFolder "C:\path\to\logs" -AllEvents -StartTime "2024-09-01 00:00:00" -EndTime "2024-09-01 00:05:00"
 ```
 
 
