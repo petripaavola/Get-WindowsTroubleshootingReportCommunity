@@ -1,6 +1,10 @@
-# Get-WindowsTroubleshootingReportCommunity
+# Get-WindowsTroubleshootingReportCommunity ver 0.7
 
 The **Ultimate Windows and Intune Troubleshooting Tool** for analyzing and visualizing Windows Event logs and log files. **Join the community** to contribute and share custom event detection rules for even better troubleshooting experiences.
+
+### Note! This is still under development and you are the first ones to test this tool. Be nice and send feedback what is working and what is not.
+
+Yes, there are lot's of thing to do to make this perfect but we'll get there some day :)
 
 ## Features
 - **Event Log Support**: Reads Windows Event logs either from live systems or from diagnostics packages (.zip) downloaded via Intune.
@@ -16,8 +20,27 @@ The **Ultimate Windows and Intune Troubleshooting Tool** for analyzing and visua
 ## Usage
 
 ```powershell
-Get-WindowsTroubleshootingReportCommunity.ps1 -LogFile "C:\path\to\log.evtx" -LogFilesFolder "C:\path\to\logs" -LastDays 1 -AllEvents -StartTime "2024-09-01 00:00:00" -EndTime "2024-09-02 00:00:00"
+Get-WindowsTroubleshootingReportCommunity.ps1 -LastDays 1
 ```
+```powershell
+Get-WindowsTroubleshootingReportCommunity.ps1 -LastDays 30 -IncludeSelectedKnownRulesCategoriesOnly 'Updates - Install','Application installation - MSI','Power management - Start&Shutdown'
+```
+```powershell
+Get-WindowsTroubleshootingReportCommunity.ps1 -LastDays 180 -IncludeSelectedKnownRulesCategoriesOnly 'Updates - Install'
+```
+```powershell
+Get-WindowsTroubleshootingReportCommunity.ps1 -MinutesBeforeLastBoot 2 -MinutesAfterLastBoot 2 -AllEvents
+```
+```powershell
+Get-WindowsTroubleshootingReportCommunity.ps1 -LastMinutes 5 -AllEvents
+```
+```powershell
+Get-WindowsTroubleshootingReportCommunity.ps1 -LogFilesFolder "C:\path\to\logs" -LastDays 2
+```
+```powershell
+Get-WindowsTroubleshootingReportCommunity.ps1 -LogFilesFolder "C:\path\to\logs" -AllEvents -StartTime "2024-09-01 00:00:00" -EndTime "2024-09-01 00:05:00"
+```
+
 
 ### Parameters:
 - **`-LogFile`**: Path to a specific Windows Event (.evtx) or structured log file.
