@@ -29,6 +29,9 @@ Yes, there are lot's of thing to do to make this perfect but we'll get there som
 ./Get-WindowsTroubleshootingReportCommunity.ps1 -LastDays 180 -IncludeSelectedKnownRulesCategoriesOnly 'Updates - Install'
 ```
 ```powershell
+./Get-WindowsTroubleshootingReportCommunity.ps1 -LastDays 180 -ExcludeSelectedKnownRulesCategoriesOnly 'Powershell'
+```
+```powershell
 ./Get-WindowsTroubleshootingReportCommunity.ps1 -MinutesBeforeLastBoot 2 -MinutesAfterLastBoot 2 -AllEvents
 ```
 ```powershell
