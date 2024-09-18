@@ -22,31 +22,39 @@ Download script package [Get-WindowsTroubleshootingReportCommunity_v0.7.zip](./G
 ---
 
 ## Usage
-
+Run report from local computer. Get known events from last 1 days. This is smaller report
 ```powershell
 ./Get-WindowsTroubleshootingReportCommunity.ps1 -LastDays 1
 ```
+Run report from local computer. Get known event from last 30 days only from specified categories. This is good report to see how MSI apps and updates are installing. You can even try running with -LastDays 90 or even -LastDays 180
 ```powershell
 ./Get-WindowsTroubleshootingReportCommunity.ps1 -LastDays 30 -IncludeSelectedKnownRulesCategoriesOnly 'Updates - Install','Application installation - MSI','Power management - Start&Shutdown'
 ```
+Same as above but sort events Descending
 ```powershell
 ./Get-WindowsTroubleshootingReportCommunity.ps1 -LastDays 30 -IncludeSelectedKnownRulesCategoriesOnly 'Updates - Install','Application installation - MSI','Power management - Start&Shutdown' -SortDescending
 ```
+Run report from local computer from last 180 days showing only 'Updates - Install' category.
 ```powershell
 ./Get-WindowsTroubleshootingReportCommunity.ps1 -LastDays 180 -IncludeSelectedKnownRulesCategoriesOnly 'Updates - Install'
 ```
+Run report from local computer from last 180 days but exclude 'Powershell' category. This is because PowerShell scripts may grow report size multiple times.
 ```powershell
 ./Get-WindowsTroubleshootingReportCommunity.ps1 -LastDays 180 -ExcludeSelectedKnownRulesCategoriesOnly 'Powershell'
 ```
+Run report from local computer. Capture logs and event from 2 minutes before last reboot and 2 minutes after last reboot. -AllEvents means that tool gathers every event found to report. This is bigger report but it shows everything
 ```powershell
 ./Get-WindowsTroubleshootingReportCommunity.ps1 -MinutesBeforeLastBoot 2 -MinutesAfterLastBoot 2 -AllEvents
 ```
+Run report from local computer from last 5 minutes. Capture all events and logs. This is good command to run after some specific action taken.
 ```powershell
 ./Get-WindowsTroubleshootingReportCommunity.ps1 -LastMinutes 5 -AllEvents
 ```
+Run report from saved log files from last 2 days. Remember that counting starts from current time
 ```powershell
 ./Get-WindowsTroubleshootingReportCommunity.ps1 -LogFilesFolder "C:\path\to\logs" -LastDays 2
 ```
+Run report from saved log files. Use specified StartTime and Endtime and capture all events found. Because of -AllEvents this is limited to 5 minutes in this example command
 ```powershell
 ./Get-WindowsTroubleshootingReportCommunity.ps1 -LogFilesFolder "C:\path\to\logs" -AllEvents -StartTime "2024-09-01 00:00:00" -EndTime "2024-09-01 00:05:00"
 ```
