@@ -5,14 +5,33 @@
 			{
 				"CategoryName": "Scheduled Tasks",
 				"LogType": "ScheduledTasks",
-				"Channel": "",
+				"Channel": "Scheduled Tasks",
 				"Id": 0,
-				"ProviderName": "",
+				"ProviderName": "Scheduled Tasks",
 				"IncludeEventXMLDataInMessage": false,
 				"IncludeEventXMLDataInToolTip": false,
 				"ToolTipText": "",
 				"Color": "",
 				"DeveloperNotes": "DO NOT REMOVE ME! Internal CategoryName so you can Include or Exclude Scheduled Tasks from report",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+				"LinkToBlogArticle": null
+			}
+		]
+	},
+	{
+		"CategoryName": "Scheduled Tasks Future",
+		"KnownEventRules": [
+			{
+				"CategoryName": "Scheduled Tasks Future",
+				"LogType": "ScheduledTasks",
+				"Channel": "Scheduled Tasks Future",
+				"Id": 0,
+				"ProviderName": "Scheduled Tasks Future",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": false,
+				"ToolTipText": "",
+				"Color": "",
+				"DeveloperNotes": "DO NOT REMOVE ME! Internal CategoryName so you can Include or Exclude Scheduled Tasks Future from report",
 				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
 				"LinkToBlogArticle": null
 			}
@@ -48,9 +67,9 @@
 				"ProviderName": "MsiInstaller",
 				"IncludeEventXMLDataInMessage": false,
 				"IncludeEventXMLDataInToolTip": false,
-				"ToolTipText": "Windows Installer installed the product.",
-				"Color": "Green",
-				"DeveloperNotes": "Windows Installer installed the product. Product Name: Mozilla Firefox 130.0 x64 en-US. Product Version: 130.0.0.0. Product Language: 0. Manufacturer: Mozilla. Installation success or error status: 0.",
+				"ToolTipText": "Windows Installer installed the product. Check if it succeeded or failed!",
+				"Color": "Yellow",
+				"DeveloperNotes": "Windows Installer installed the product. Product Name: Mozilla Firefox 130.0 x64 en-US. Product Version: 130.0.0.0. Product Language: 0. Manufacturer: Mozilla. Installation success or error status: 0. OR Installation success or error status: 1603",
 				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
 				"LinkToBlogArticle": null
 			},
@@ -76,6 +95,18 @@
 				"IncludeEventXMLDataInToolTip": false,
 				"ToolTipText": "Beginning a Windows Installer transaction",
 				"DeveloperNotes": "Beginning a Windows Installer transaction: C:\\Users\\username\\AppData\\Local\\Temp\\MicrosoftEdgeDownloads\\5a6b708b-8605-4f36-a705-e192ca521b7c\\Firefox Setup 130.0.msi. Client Process Id: 118392."
+			},
+			{
+				"CategoryName": "Application installation - MSI",
+				"LogType": ".evtx",
+				"Channel": "Application",
+				"Id": 11708,
+				"ProviderName": "MsiInstaller",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": false,
+				"ToolTipText": "MSI Installation failed!",
+				"Color": "Red",
+				"DeveloperNotes": "Product: Microsoft EPM Agent -- Installation failed."
 			}
 		]
 	},
@@ -459,165 +490,6 @@
 				"ToolTipText": "",
 				"Color": "Red",
 				"DeveloperNotes": "Failed to backup BitLocker Drive Encryption recovery information for volume %1 to your Azure AD. TraceId: %2 Error: %3",
-				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
-				"LinkToBlogArticle": null
-			}
-		]
-	},
-	{
-		"CategoryName": "Windows LAPS",
-		"KnownEventRules": [
-			{
-				"CategoryName": "Windows LAPS",
-				"LogType": ".evtx",
-				"Channel": "Microsoft-Windows-LAPS/Operational",
-				"Id": 10004,
-				"ProviderName": "Microsoft-Windows-LAPS",
-				"IncludeEventXMLDataInMessage": false,
-				"IncludeEventXMLDataInToolTip": false,
-				"ToolTipText": "",
-				"Color": "White",
-				"DeveloperNotes": "LAPS policy processing succeeded",
-				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
-				"LinkToBlogArticle": null
-			},
-			{
-				"CategoryName": "Windows LAPS",
-				"LogType": ".evtx",
-				"Channel": "Microsoft-Windows-LAPS/Operational",
-				"Id": 10005,
-				"ProviderName": "Microsoft-Windows-LAPS",
-				"IncludeEventXMLDataInMessage": false,
-				"IncludeEventXMLDataInToolTip": true,
-				"ToolTipText": "",
-				"Color": "Red",
-				"DeveloperNotes": "LAPS policy processing failed with the error code below.",
-				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
-				"LinkToBlogArticle": null
-			},
-			{
-				"CategoryName": "Windows LAPS",
-				"LogType": ".evtx",
-				"Channel": "Microsoft-Windows-LAPS/Operational",
-				"Id": 10007,
-				"ProviderName": "Microsoft-Windows-LAPS",
-				"IncludeEventXMLDataInMessage": false,
-				"IncludeEventXMLDataInToolTip": false,
-				"ToolTipText": "",
-				"Color": "Yellow",
-				"DeveloperNotes": "LAPS is not currently configured to manage any account.",
-				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
-				"LinkToBlogArticle": null
-			},
-			{
-				"CategoryName": "Windows LAPS",
-				"LogType": ".evtx",
-				"Channel": "Microsoft-Windows-LAPS/Operational",
-				"Id": 10013,
-				"ProviderName": "Microsoft-Windows-LAPS",
-				"IncludeEventXMLDataInMessage": false,
-				"IncludeEventXMLDataInToolTip": true,
-				"ToolTipText": "",
-				"Color": "Red",
-				"DeveloperNotes": "LAPS failed to find the currently configured local administrator account.",
-				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
-				"LinkToBlogArticle": null
-			},
-			{
-				"CategoryName": "Windows LAPS",
-				"LogType": ".evtx",
-				"Channel": "Microsoft-Windows-LAPS/Operational-DISABLED-Because-below-event-should-be-enough",
-				"Id": 10014,
-				"ProviderName": "Microsoft-Windows-LAPS",
-				"IncludeEventXMLDataInMessage": false,
-				"IncludeEventXMLDataInToolTip": false,
-				"ToolTipText": "",
-				"Color": "Yellow",
-				"DeveloperNotes": "LAPS is updating the managed account password due to an Administrator-initiated request.",
-				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
-				"LinkToBlogArticle": null
-			},
-			{
-				"CategoryName": "Windows LAPS",
-				"LogType": ".evtx",
-				"Channel": "Microsoft-Windows-LAPS/Operational",
-				"Id": 10015,
-				"ProviderName": "Microsoft-Windows-LAPS",
-				"IncludeEventXMLDataInMessage": false,
-				"IncludeEventXMLDataInToolTip": true,
-				"ToolTipText": "",
-				"Color": "Green",
-				"DeveloperNotes": "The managed account password needs to be updated due to one or more reasons (%1):",
-				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
-				"LinkToBlogArticle": null
-			},
-			{
-				"CategoryName": "Windows LAPS",
-				"LogType": ".evtx",
-				"Channel": "Microsoft-Windows-LAPS/Operational",
-				"Id": 10019,
-				"ProviderName": "Microsoft-Windows-LAPS",
-				"IncludeEventXMLDataInMessage": false,
-				"IncludeEventXMLDataInToolTip": true,
-				"ToolTipText": "",
-				"Color": "Red",
-				"DeveloperNotes": "LAPS failed to update the local admin account with the new password.\\nAccount name: %1\\nAccount RID: %2\\nError code: %3",
-				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
-				"LinkToBlogArticle": null
-			},
-			{
-				"CategoryName": "Windows LAPS",
-				"LogType": ".evtx",
-				"Channel": "Microsoft-Windows-LAPS/Operational",
-				"Id": 10020,
-				"ProviderName": "Microsoft-Windows-LAPS",
-				"IncludeEventXMLDataInMessage": false,
-				"IncludeEventXMLDataInToolTip": true,
-				"ToolTipText": "",
-				"Color": "Green",
-				"DeveloperNotes": "LAPS successfully updated the local admin account with the new password.\\nAccount name: %1\\nAccount RID: %2",
-				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
-				"LinkToBlogArticle": null
-			},
-			{
-				"CategoryName": "Windows LAPS",
-				"LogType": ".evtx",
-				"Channel": "Microsoft-Windows-LAPS/Operational",
-				"Id": 10024,
-				"ProviderName": "Microsoft-Windows-LAPS",
-				"IncludeEventXMLDataInMessage": false,
-				"IncludeEventXMLDataInToolTip": false,
-				"ToolTipText": "",
-				"Color": "Yellow",
-				"DeveloperNotes": "LAPS policy is configured as disabled.",
-				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
-				"LinkToBlogArticle": null
-			},
-			{
-				"CategoryName": "Windows LAPS",
-				"LogType": ".evtx",
-				"Channel": "Microsoft-Windows-LAPS/Operational",
-				"Id": 10029,
-				"ProviderName": "Microsoft-Windows-LAPS-EVENT-DISABLED-BECAUSE-DUPLICATE-Check-below-event",
-				"IncludeEventXMLDataInMessage": false,
-				"IncludeEventXMLDataInToolTip": false,
-				"ToolTipText": "",
-				"Color": "Green",
-				"DeveloperNotes": "LAPS successfully updated Azure Active Directory with the new password.",
-				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
-				"LinkToBlogArticle": null
-			},
-			{
-				"CategoryName": "Windows LAPS",
-				"LogType": ".evtx",
-				"Channel": "Microsoft-Windows-LAPS/Operational",
-				"Id": 10067,
-				"ProviderName": "Microsoft-Windows-LAPS",
-				"IncludeEventXMLDataInMessage": false,
-				"IncludeEventXMLDataInToolTip": true,
-				"ToolTipText": "",
-				"Color": "Yellow",
-				"DeveloperNotes": "The configured local account is currently disabled. The account must be enabled before it can be used.",
 				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
 				"LinkToBlogArticle": null
 			}
@@ -1057,6 +929,24 @@
 				"CategoryName": "Intune Applications",
 				"LogType": ".log",
 				"LogFileName": "AppWorkload.log",
+				"Message": "[Win32App][V3Processor] Processing subgraph",
+				"ToolTipText": "",
+				"Color": "Yellow",
+				"DeveloperNotes": "This has Intune App process start information"
+			},
+			{
+				"CategoryName": "Intune Applications",
+				"LogType": ".log",
+				"LogFileName": "AppWorkload.log",
+				"Message": ".*applicationDetected: True.*",
+				"ToolTipText": "",
+				"Color": "Green",
+				"DeveloperNotes": "This has Intune App detection check Detected True result"
+			},
+			{
+				"CategoryName": "Intune Applications",
+				"LogType": ".log",
+				"LogFileName": "AppWorkload.log",
 				"Message": "[Win32App] lpExitCode is defined as Success",
 				"ToolTipText": "",
 				"Color": "Green",
@@ -1100,7 +990,7 @@
 				"LogFileName": "healthscripts.log",
 				"Message": "[HS] err output =",
 				"ToolTipText": "Intune Remediation or custom compliance check script Output",
-				"Color": "Red",
+				"Color": "Yellow",
 				"DeveloperNotes": ""
 			},
 			{
