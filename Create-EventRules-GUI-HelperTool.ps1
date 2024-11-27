@@ -12,6 +12,12 @@
 $Author = "Firstname.Lastname@company.com / Super IT-Admin"
 
 
+# Create Eventrules folder if not exists
+if(-not (Test-Path "$PSScriptRoot\EventRules")) {
+	New-Item -ItemType Directory -Path "$PSScriptRoot\EventRules" -Force
+}
+
+
 Write-Host "Select Event Provider to get Event IDs from"
 
 # List Event log Providers in Out-GridView
@@ -23,23 +29,45 @@ Foreach ($EventProviderObject in $SelectedEventProviders) {
 	# Show selected EventProvider
 	$EventProviderObject | Format-List -Property *
 
+	# Make a copy of events so we can add our own custom properties later
+	$Events = (Get-WinEvent -ListProvider $EventProviderObject.ProviderName).Events
+
+	# Add Level as clear text (Informational, Error, Warning)
+	Foreach ($Event in $Events) {
+		# DEBUG
+		#Write-Host "DEBUG event:"
+		#$Event | ConvertTo-Json
+
+		# Add DisplayName property for Event
+		$Event | Add-Member -MemberType NoteProperty -Name LevelDisplayName -Value $Event.Level.DisplayName
+
+		# Add LogName property for Event
+		$Event | Add-Member -MemberType NoteProperty -Name LogName -Value $Event.LogLink.LogName
+
+	}
+
 	Write-Host "Select Event IDs you want to add to your custom EventRules json file"
 
 	# Show available Event Provider Event Ids
-	$SelectedEventIds = (Get-WinEvent -ListProvider $EventProviderObject.ProviderName).Events | Select-Object -Property Id, Description, Level, LogLink | Out-GridView -Title 'Select objects for KnownRules.json' -OutputMode Multiple
+	$SelectedEventIds = $Events | Select-Object -Property Id, Description, LevelDisplayName, LogName, LogLink, Level | Out-GridView -Title 'Select objects for KnownRules.json' -OutputMode Multiple
+
+	if(-not $SelectedEventIds) {
+		Write-Host "No Event IDs selected. Skipping EventProvider $($EventProviderObject.ProviderName)"
+		Continue
+	}
 
 	$CategoryName = $null
 	While(-not $CategoryName) {
 		$CategoryName = Read-Host "Enter CategoryName for KnownRules.json: "
 	}
 	
-	$EventRulesFileFullPath = "$PSScriptRoot\EventRules-$($CategoryName).json"
+	$EventRulesFileFullPath = "$PSScriptRoot\EventRules\EventRules-$($CategoryName).json"
 	Write-Host "Create EventRules file: $EventRulesFileFullPath"
 
 	$EventRulesArray = [System.Collections.Generic.List[PSObject]]@()
 
 	# Translate selected Event provider Ids to KnownRules.json syntax
-	Foreach($SelectedEventId in $SelectedEventIds) {
+	Foreach($SelectedEventId in $SelectedEventIds | Sort-Object -Property Id) {
 		# Create custom Powershell object
 
 		# DEBUG
@@ -70,6 +98,7 @@ Foreach ($EventProviderObject in $SelectedEventProviders) {
 			"LogType" = '.evtx'
 			"Channel" = $SelectedEventId.LogLink.LogName
 			"Id" = $SelectedEventId.Id
+			"LevelDisplayName" = $SelectedEventId.LevelDisplayName
 			"ProviderName" = "$($EventProviderObject.ProviderName)"
 			"IncludeEventXMLDataInMessage" = $false
 			"IncludeEventXMLDataInToolTip" = $false
