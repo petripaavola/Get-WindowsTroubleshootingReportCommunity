@@ -4,9 +4,17 @@ The **Ultimate Windows and Intune Troubleshooting Tool** for analyzing and visua
 
 ### Note! This is still under development and you are the first ones to test this tool. Be nice and send feedback what is working and what is not.
 
+### Changelog ver 0.8
+  * One step closer to public release :)
+  * Known Events are shown in Out-GridView
+  * EventLogs and log files are shown in Out-GridView
+  * HTML report has lot of features for filtering and search
+  * **Create-EventRules-GUI-HelperTool.ps1** creates .json to EventRules folder 
+
+
 Yes, there are lot's of thing to do to make this perfect but we'll get there some day :)
 
-**And please share EventRules you have created**
+**And please share Ev*entRules you have created**
 
 Download script package [Get-WindowsTroubleshootingReportCommunity_v0.8.zip](./Get-WindowsTroubleshootingReportCommunity_v0.8.zip)
 
