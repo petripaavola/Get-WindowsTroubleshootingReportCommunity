@@ -1,4 +1,4 @@
-# Get-WindowsTroubleshootingReportCommunity ver 0.71
+# Get-WindowsTroubleshootingReportCommunity ver 0.8
 
 The **Ultimate Windows and Intune Troubleshooting Tool** for analyzing and visualizing Windows Event logs and log files. **Join the community** to contribute and share custom event detection rules for even better troubleshooting experiences.
 
@@ -8,7 +8,7 @@ Yes, there are lot's of thing to do to make this perfect but we'll get there som
 
 **And please share EventRules you have created**
 
-Download script package [Get-WindowsTroubleshootingReportCommunity_v0.71.zip](./Get-WindowsTroubleshootingReportCommunity_v0.71.zip)
+Download script package [Get-WindowsTroubleshootingReportCommunity_v0.8.zip](./Get-WindowsTroubleshootingReportCommunity_v0.8.zip)
 
 ## Features
 - **Event Log Support**: Reads Windows Event logs either from live systems or from diagnostics packages (.zip) downloaded via Intune.
@@ -26,31 +26,15 @@ Run report from local computer. Get known events from last 1 days. This is small
 ```powershell
 ./Get-WindowsTroubleshootingReportCommunity.ps1 -LastDays 1
 ```
-Run report from local computer. Get known event from last 30 days only from specified categories. This is good report to see how MSI apps and updates are installing. You can even try running with -LastDays 90 or even -LastDays 180
+Run report from local computer from last 5 minutes. Capture all events and logs. This is good command to run after some specific action taken for example Intune Sync command
 ```powershell
-./Get-WindowsTroubleshootingReportCommunity.ps1 -LastDays 30 -IncludeSelectedKnownRulesCategoriesOnly 'Updates - Install','Application installation - MSI','Power management - Start&Shutdown'
-```
-Same as above but sort events Descending
-```powershell
-./Get-WindowsTroubleshootingReportCommunity.ps1 -LastDays 30 -IncludeSelectedKnownRulesCategoriesOnly 'Updates - Install','Application installation - MSI','Power management - Start&Shutdown' -SortDescending
-```
-Run report from local computer from last 180 days showing only 'Updates - Install' category.
-```powershell
-./Get-WindowsTroubleshootingReportCommunity.ps1 -LastDays 180 -IncludeSelectedKnownRulesCategoriesOnly 'Updates - Install'
-```
-Run report from local computer from last 180 days but exclude 'Powershell' category. This is because PowerShell scripts may grow report size multiple times.
-```powershell
-./Get-WindowsTroubleshootingReportCommunity.ps1 -LastDays 180 -ExcludeSelectedKnownRulesCategoriesOnly 'Powershell'
+./Get-WindowsTroubleshootingReportCommunity.ps1 -LastMinutes 5 -AllEvents
 ```
 Run report from local computer. Capture logs and event from 2 minutes before last reboot and 2 minutes after last reboot. -AllEvents means that tool gathers every event found to report. This is bigger report but it shows everything
 ```powershell
 ./Get-WindowsTroubleshootingReportCommunity.ps1 -MinutesBeforeLastBoot 2 -MinutesAfterLastBoot 2 -AllEvents
 ```
-Run report from local computer from last 5 minutes. Capture all events and logs. This is good command to run after some specific action taken.
-```powershell
-./Get-WindowsTroubleshootingReportCommunity.ps1 -LastMinutes 5 -AllEvents
-```
-Run report from saved log files from last 2 days. Remember that counting starts from current time
+Run report from saved log files from last 2 days. Show only known events. Remember that counting starts from current time
 ```powershell
 ./Get-WindowsTroubleshootingReportCommunity.ps1 -LogFilesFolder "C:\path\to\logs" -LastDays 2
 ```
