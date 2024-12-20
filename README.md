@@ -1,8 +1,21 @@
-# Get-WindowsTroubleshootingReportCommunity ver 0.8
+# Get-WindowsTroubleshootingReportCommunity ver 0.9
 
 The **Ultimate Windows and Intune Troubleshooting Tool** for analyzing and visualizing Windows Event logs and log files. **Join the community** to contribute and share custom event detection rules for even better troubleshooting experiences.
 
 ### Note! This is still under development and you are the first ones to test this tool. Be nice and send feedback what is working and what is not.
+
+### Changelog ver 0.9
+  * Maybe we will release this in the beginning of 2025 :)
+  * KnownEvents, EventLogs and Logfiles are selected in Out-GridView by default
+  * Support for new Intune Custom Inventory log files in folder
+    * **C:\Program Files\Microsoft Device Inventory Agent\Logs**
+  * Suppport for Sysinternals Process Monitor (**procmon**) csv-export files
+    * Be careful with this and do not add too big traces to report
+  * **Report will rename all found and known GUIDs to real names**
+    * Folder KnownGUIDs has **KnownGUIDS-foo.json** files which has at least **properties Id** (which is GUID) and property **name** and/or **displayname**
+    * Report includes Attack Surface Reduction (ASR) rules GUIDs file
+    * In the very near future you can for example download Intune App, Powershell and Remediation scripts GUIDs easily with a tool to help Intune logs troubleshooting
+  * Fixed a bug where KnownEvents for multiple .log files worked for only 1 log file for specific log. Rest of log files failed.
 
 ### Changelog ver 0.8
   * One step closer to public release :)
@@ -14,9 +27,9 @@ The **Ultimate Windows and Intune Troubleshooting Tool** for analyzing and visua
 
 Yes, there are lot's of thing to do to make this perfect but we'll get there some day :)
 
-**And please share Ev*entRules you have created**
+**And please share EventRules you have created**
 
-Download script package [Get-WindowsTroubleshootingReportCommunity_v0.8.zip](./Get-WindowsTroubleshootingReportCommunity_v0.8.zip)
+Download script package [Get-WindowsTroubleshootingReportCommunity_v0.9.zip](./Get-WindowsTroubleshootingReportCommunity_v0.9.zip)
 
 ## Features
 - **Event Log Support**: Reads Windows Event logs either from live systems or from diagnostics packages (.zip) downloaded via Intune.
@@ -68,6 +81,7 @@ Run report from saved log files. Use specified StartTime and Endtime and capture
 - **`-IncludeSelectedKnownRulesCategoriesOnly`**: Filter events by selected known categories.
 - **`-ExcludeSelectedKnownRulesCategories`**: Exclude events by selected known categories.
 - **`-SortDescending`**: Sort the report with the most recent events first.
+- **`-ProcmonFilePath`**: Include Sysinternals Process Monitor (procmon) CSV-export file
 
 ---
 
