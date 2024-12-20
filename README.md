@@ -9,13 +9,13 @@ The **Ultimate Windows and Intune Troubleshooting Tool** for analyzing and visua
   * KnownEvents, EventLogs and Logfiles are selected in Out-GridView by default
   * Support for new Intune Custom Inventory log files in folder
     * **C:\Program Files\Microsoft Device Inventory Agent\Logs**
-  * Suppport for Sysinternals Process Monitor (**procmon**) csv-export files
+  * Suppport for Sysinternals Process Monitor (**procmon**) csv-export files with parameter **-ProcmonFilePath**
     * Be careful with this and do not add too big traces to report
   * **Report will rename all found and known GUIDs to real names**
     * Folder KnownGUIDs has **KnownGUIDS-foo.json** files which has at least **properties Id** (which is GUID) and property **name** and/or **displayname**
     * Report includes Attack Surface Reduction (ASR) rules GUIDs file
     * In the very near future you can for example download Intune App, Powershell and Remediation scripts GUIDs easily with a tool to help Intune logs troubleshooting
-  * Fixed a bug where KnownEvents for multiple .log files worked for only 1 log file for specific log. Rest of log files failed.
+  * Fixed a bug where KnownEvents for multiple .log files worked for only 1 log file for specific log. Rest of log files failed to find KnownEvents.
 
 ### Changelog ver 0.8
   * One step closer to public release :)
