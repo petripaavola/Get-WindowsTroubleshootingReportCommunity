@@ -1,0 +1,1 @@
+Tool to import Intune App and Scripts GUID is coming in next version
