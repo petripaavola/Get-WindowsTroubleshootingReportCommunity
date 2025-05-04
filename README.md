@@ -47,6 +47,7 @@ Petri has helped thousands of IT pros automate and simplify log analysis — thi
 - [Contributing](#contributing)
 - [Scenarios](#scenarios)
 - [Example Reports](#example-reports-coming-soon)
+- [GUID to Name Resolution](#guid-resolution)
 - [PowerShell Script Parameters](#powershell-script-parameters)
 - [Supported Log Files and Event Logs](#supported-log-files-and-event-logs)
 - [Do I Need Admin Rights](#do-i-need-admin-rights)
@@ -178,6 +179,48 @@ Petri has helped thousands of IT pros automate and simplify log analysis — thi
 
 - **Timeline View**
 - **Filtered Report**: Only known events or categories
+
+---
+
+<a name="guid-resolution"></a>
+## 🔎 GUID to Name Resolution
+
+Reading Intune logs full of random GUIDs? This tool fixes that.
+
+The report can **automatically convert known GUIDs to real, human-readable names** — especially helpful when analyzing Intune `.log` files and Event Logs.
+
+### 💡 Built-in Translation Features
+
+- **App installation logs**: Converts Intune App GUIDs to their real names. (Built-in)
+- **Attack Surface Reduction (ASR) rules**: Recognized and labeled. (Built-in)
+- **PowerShell and Remediation Scripts**: Shows actual script names. (Run included tool to download Intune names)
+
+### 📦 How It Works
+
+1. The tool checks for known GUIDs using `.json` files in the `KnownGUIDs` folder.
+2. You can enrich this mapping using a built-in helper script:
+   ```powershell
+   .\KnownGUIDs\Get-Intune-Apps-and-Scripts-GUIDs-and-Names.ps1
+   ```
+3. Run the script once to generate a full list of:
+   - Intune Apps
+   - PowerShell Scripts
+   - Remediation Scripts
+
+### ✅ Result
+
+Once mapped, your report will display:
+```
+Instead of:
+  ApplicationId: d8a3bc0d-2342-48b9-a0a1-7bc409b153f3
+
+You’ll see:
+  Application: Microsoft Edge (Win32) – Install
+```
+
+No more digging through Intune manually. Just clear, meaningful names in the report.
+
+🧠 This functionality alone can save **hours** of troubleshooting and is completely automated after a quick setup.
 
 ---
 
