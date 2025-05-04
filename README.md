@@ -31,13 +31,15 @@ Petri has helped thousands of IT pros automate and simplify log analysis — thi
 
 ---
 
-📦 [**Download the Tool**](./Get-WindowsTroubleshootingReportCommunity_v1.0.zip) and start seeing the full story in your logs.
+📦 [**Download the Tool v1.0**](./Get-WindowsTroubleshootingReportCommunity_v1.0.zip) and start seeing the full story in your logs.
 
 ---
 
 ## Table of Contents 📚
 
 - [What's New (v1.0)](#whats-new-v10)
+- [Screenshots](#screenshots)
+- [Video Demo](#video-demo) 
 - [Features](#features)
 - [Usage Examples](#usage-examples)
 - [Parameters](#parameters)
@@ -55,7 +57,8 @@ Petri has helped thousands of IT pros automate and simplify log analysis — thi
 
 ---
 
-## What's New (v1.0) 📢
+<a name="whats-new-v10"></a>
+## 🆕 What's New (v1.0)
 
 **🎉 First Public Release! (Finally 😀)**
 
@@ -70,7 +73,8 @@ Petri has helped thousands of IT pros automate and simplify log analysis — thi
 
 ---
 
-## Screenshots 📸
+<a name="screenshots"></a>
+## 🖼️ Screenshots
 
 > 📍 Screenshots
 
@@ -78,11 +82,14 @@ Petri has helped thousands of IT pros automate and simplify log analysis — thi
 
 ---
 
-## Video Demo (Coming Soon) 🎥
+<a name="video-demo"></a>
+## 🎥 Video Demo
 
+> 📍 Video demo coming soon...
 ---
 
-## Features 🛠️
+<a name="features"></a>
+## 🛠️ Features
 
 - **Event Log Support**: Read Windows Event logs from live Windows systems or Intune DiagLogs packages (.zip). Extract .zip file first.
 - **Log File Support**: Analyze structured log files containing dateTime and message fields.
@@ -95,7 +102,8 @@ Petri has helped thousands of IT pros automate and simplify log analysis — thi
 
 ---
 
-## Usage Examples ▶️
+<a name="usage-examples"></a>
+## ▶️ Usage Examples
 
 ```powershell
 # Get only KNOWN Events. KnownEvents categories and time range is selected from graphical UI
@@ -119,7 +127,8 @@ Petri has helped thousands of IT pros automate and simplify log analysis — thi
 
 ---
 
-## Parameters ⚙️
+<a name="parameters"></a>
+## ⚙️ Parameters
 
 - `-AllEvents`: Include all events (not just known).
 - `-LogFilesFolder`: Folder with multiple .evtx/log files.
@@ -133,7 +142,8 @@ Petri has helped thousands of IT pros automate and simplify log analysis — thi
 
 ---
 
-## How It Works 🧠
+<a name="how-it-works"></a>
+## 🧠 How It Works
 
 1. **Log Processing**: Parses event logs and .log files, combines them into timeline.
 2. **Report Generation**: Builds interactive HTML report with filters and search.
@@ -142,7 +152,8 @@ Petri has helped thousands of IT pros automate and simplify log analysis — thi
 
 ---
 
-## Contributing 🤝
+<a name="contributing"></a>
+## 🤝 Contributing
 
 - Use `Create-EventRules-GUI-HelperTool.ps1` to create `EventRules.json`.
 - Add green (success) and red (fail) markers.
@@ -150,7 +161,8 @@ Petri has helped thousands of IT pros automate and simplify log analysis — thi
 
 ---
 
-## Scenarios 🧪
+<a name="scenarios"></a>
+## 🧪 Scenarios
 
 - **Windows Update**: Status, success/fail, reboots.
 - **Intune**: Enrollment, sync, script/app information and errors.
@@ -160,20 +172,23 @@ Petri has helped thousands of IT pros automate and simplify log analysis — thi
 
 ---
 
-## Example Reports (Coming soon) 📊
+<a name="example-reports-coming-soon"></a>
+## 📊 Example Reports (Coming soon)
 
 - **Timeline View**
 - **Filtered Report**: Only known events or categories
 
 ---
 
-## PowerShell Script Parameters 📘
+<a name="powershell-script-parameters"></a>
+## 📘 PowerShell Script Parameters
 
 > Full parameter list is in the script comments or use `Get-Help`.
 
 ---
 
-## Supported Log Files and Event Logs 🗂️
+<a name="supported-log-files-and-event-logs"></a>
+## 🗂️ Supported Log Files and Event Logs
 
 - Full support for **.evtx** logs (online/offline)
 - Support for Intune and ConfigMgr **CMTrace-style .log** files
@@ -182,7 +197,8 @@ Petri has helped thousands of IT pros automate and simplify log analysis — thi
 
 ---
 
-## Do I Need Admin Rights 🔐
+<a name="do-i-need-admin-rights"></a>
+## 🔐 Do I Need Admin Rights
 
 - Not required, but highly recommended for full access to Windows Event logs
 - **Admin = better coverage**
@@ -190,29 +206,30 @@ Petri has helped thousands of IT pros automate and simplify log analysis — thi
 
 ---
 
-## PowerShell Support 🧩
+<a name="powershell-support"></a>
+## 🧩 PowerShell Support
 
 - ✅ PowerShell Core (7.x) - This is preferred and faster!
 - ✅ Windows PowerShell 5.1
 
 ---
 
-<a name="License"></a>
-## License 📄
+<a name="license"></a>
+## 📄 License
 
 MIT License — see [LICENSE.md](LICENSE.md)
 
 ---
 
-<a name="Contributors"></a>
-## Contributors 👨‍💻
+<a name="contributors"></a>
+## 👨‍💻 Contributors
 
 - **Petri Paavola** – *Author* (Microsoft MVP - Windows and Intune)  
   📧 Petri.Paavola@yodamiitti.fi
 
 ---
-<a name="Acknowledgments"></a>
-## Acknowledgments
+<a name="acknowledgments"></a>
+## 🤖 Acknowledgments
 
 Special thanks to **GPT-4 from OpenAI** for helping with documentation generation, text refactoring, and markdown polishing. AI helped us work faster, so we can troubleshoot better. 💡
 
