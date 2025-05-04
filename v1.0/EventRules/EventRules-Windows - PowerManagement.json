@@ -1,0 +1,194 @@
+[
+	{
+		"CategoryName": "Windows - Power management (Modern) Sleep",
+		"KnownEventRules": [
+			{
+				"CategoryName": "Windows - Power management (Modern) Sleep",
+				"LogType": ".evtx",
+				"Channel": "System",
+				"Id": 1,
+				"ProviderName": "Microsoft-Windows-Power-Troubleshooter",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": false,
+				"ToolTipText": "The system has returned from a low power state.",
+				"DeveloperNotes": "The system has returned from a low power state.\\n\\nSleep Time: 2024-09-07T13:17:14.529644800Z\\nWake Time: 2024-09-07T13:22:49.615516200Z\\n\\nWake Source: Device -Surface Button"
+			},
+			{
+				"CategoryName": "Windows - Power management (Modern) Sleep",
+				"LogType": ".evtx",
+				"Channel": "System",
+				"Id": 42,
+				"ProviderName": "Microsoft-Windows-Kernel-Power",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": true,
+				"ToolTipText": "The system is entering sleep.",
+				"DeveloperNotes": "The system is entering sleep.\\n\\nSleep Reason: Application API"
+			},
+			{
+				"CategoryName": "Windows - Power management (Modern) Sleep",
+				"LogType": ".evtx",
+				"Channel": "System",
+				"Id": 107,
+				"ProviderName": "Microsoft-Windows-Kernel-Power",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": true,
+				"ToolTipText": "The system has resumed from sleep.",
+				"DeveloperNotes": "The system has resumed from sleep."
+			},
+			{
+				"CategoryName": "Windows - Power management (Modern) Sleep",
+				"LogType": ".evtx",
+				"Channel": "System",
+				"Id": 506,
+				"ProviderName": "Microsoft-Windows-Kernel-Power",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": true,
+				"ToolTipText": "The system is entering Modern Standby",
+				"DeveloperNotes": "The system is entering Modern Standby\\n\\nReason: Sleep, Hibernate, or Shutdown."
+			},
+			{
+				"CategoryName": "Windows - Power management (Modern) Sleep",
+				"LogType": ".evtx",
+				"Channel": "System",
+				"Id": 507,
+				"ProviderName": "Microsoft-Windows-Kernel-Power",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": true,
+				"ToolTipText": "The system is exiting Modern Standby",
+				"DeveloperNotes": "The system is exiting Modern Standby\\n\\nReason: Resume from Hibernate."
+			},
+			{
+				"CategoryName": "Windows - Power management (Modern) Sleep",
+				"LogType": ".evtx",
+				"Channel": "Microsoft-Windows-Wcmsvc/Operational",
+				"Id": 1005,
+				"ProviderName": "Microsoft-Windows-Wcmsvc",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": false,
+				"ToolTipText": "A Power change was processed. ",
+				"DeveloperNotes": "Several different reasons:\\n\\nReason: Operation is resuming automatically from a low-power state\\n\\nReason: A resume was triggered by user input"
+			},
+			{
+				"CategoryName": "Windows - Power management (Modern) Sleep",
+				"LogType": ".log",
+				"LogFileName": "pwrmgmt.log",
+				"Message": "The next wake up time is",
+				"ToolTipText": "",
+				"Color": "Yellow",
+				"DeveloperNotes": "",
+				"Author": "",
+				"LinkToBlogArticle": null
+			},
+			{
+				"CategoryName": "Windows - Power management (Modern) Sleep",
+				"LogType": ".log",
+				"LogFileName": "pwrmgmt.log",
+				"Message": "This device is Modern Standby Capable",
+				"ToolTipText": "",
+				"Color": "Green",
+				"DeveloperNotes": "",
+				"Author": "",
+				"LinkToBlogArticle": null
+			}
+		]
+	},
+	{
+		"CategoryName": "Windows - Power management Reboot",
+		"KnownEventRules": [
+			{
+				"CategoryName": "Windows - Power management Reboot",
+				"LogType": ".evtx",
+				"Channel": "System",
+				"Id": 577,
+				"ProviderName": "Microsoft-Windows-Kernel-Power",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": true,
+				"ToolTipText": "Prepared reboot from sleep (Idle)",
+				"DeveloperNotes": "The system has prepared for a system initiated reboot from Sleeping (Idle)."
+			},
+			{
+				"CategoryName": "Windows - Power management Reboot",
+				"LogType": ".evtx",
+				"Channel": "System",
+				"Id": 578,
+				"ProviderName": "Microsoft-Windows-Kernel-Power",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": true,
+				"ToolTipText": "Detected reboot from sleep (Idle)",
+				"DeveloperNotes": "The system has detected a system initiated reboot from Sleeping (Idle)."
+			},
+			{
+				"CategoryName": "Windows - Power management Start&Shutdown",
+				"LogType": ".evtx",
+				"Channel": "System_RULE_DISABLED_FOR_NOW_FOR_BETTER_READABILITY",
+				"Id": 109,
+				"ProviderName": "Microsoft-Windows-Kernel-Power",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": false,
+				"ToolTipText": "Shutdown reason",
+				"DeveloperNotes": "The kernel power manager has initiated a shutdown transition.\\nAction: Power Action Reboot \\nEvent Code: 0x0 \\nReason: Kernel API"
+			}
+		]
+	},
+	{
+		"CategoryName": "Windows - Power management Start&Shutdown",
+		"KnownEventRules": [
+			{
+				"CategoryName": "Windows - Power management Start&Shutdown",
+				"LogType": ".evtx",
+				"Channel": "System",
+				"Id": 13,
+				"ProviderName": "Microsoft-Windows-Kernel-General",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": false,
+				"ToolTipText": "Shutting down",
+				"Color": "Yellow",
+				"DeveloperNotes": "The operating system is shutting down at system time 2024-08-15T21:52:47.694460500Z."
+			},
+			{
+				"CategoryName": "Windows - Power management Start&Shutdown",
+				"LogType": ".evtx",
+				"Channel": "System",
+				"Id": 12,
+				"ProviderName": "Microsoft-Windows-Kernel-General",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": false,
+				"ToolTipText": "Operating System started",
+				"Color": "Yellow",
+				"DeveloperNotes": "The operating system started at system time 2024-08-15T21:53:08.500000000Z."
+			}
+		]
+	},
+	{
+		"CategoryName": "Windows - Power management Display",
+		"KnownEventRules": [
+			{
+				"CategoryName": "Windows - Power management Display",
+				"LogType": ".evtx",
+				"Channel": "Microsoft-Windows-PushNotification-Platform/Operational",
+				"Id": 1025,
+				"ProviderName": "Microsoft-Windows-PushNotifications-Platform",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": false,
+				"ToolTipText": "Monitor sleep\\ntrue = Monitor On\\nfalse = Monitor off",
+				"DeveloperNotes": "A Power event was fired: MonitorSettingChange [PowerEventType] false [Enabled].\\nA Power event was fired: MonitorSettingChange [PowerEventType] true [Enabled]."
+			}
+		]
+	},	
+	{
+		"CategoryName": "Windows - Power management General",
+		"KnownEventRules": [
+			{
+				"CategoryName": "Windows - Power management General",
+				"LogType": ".log",
+				"LogFileName": "pwrmgmt.log",
+				"Message": "Applying Power Plan",
+				"ToolTipText": "",
+				"Color": "Yellow",
+				"DeveloperNotes": "",
+				"Author": "",
+				"LinkToBlogArticle": null
+			}
+		]
+	}
+]

@@ -1,0 +1,95 @@
+[
+	{
+		"CategoryName": "Intune - IME Applications",
+		"KnownEventRules": [
+			{
+				"CategoryName": "Intune - IME Applications",
+				"LogType": ".log",
+				"LogFileName": "AppWorkload.log",
+				"Message": "Get policies = [",
+				"ToolTipText": "",
+				"Color": "Yellow",
+				"DeveloperNotes": "This has all information about Intune Apps including App Name, GUID and App Intent",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+      			"LinkToBlogArticle": ""
+			},
+			{
+				"CategoryName": "Intune - IME Applications",
+				"LogType": ".log",
+				"LogFileName": "AppWorkload.log",
+				"Message": "[Win32App][V3Processor] Processing subgraph",
+				"ToolTipText": "",
+				"Color": "Yellow",
+				"DeveloperNotes": "This has Intune App process start information",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+      			"LinkToBlogArticle": ""
+			},
+			{
+				"CategoryName": "Intune - IME Applications Install",
+				"LogType": ".log",
+				"LogFileName": "AppWorkload.log",
+				"Message": "[Win32App] lpExitCode is defined as Success",
+				"ToolTipText": "",
+				"Color": "Green",
+				"DeveloperNotes": "Intune application installation Succeeded",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+      			"LinkToBlogArticle": ""
+			},
+			{
+				"CategoryName": "Intune - IME Applications Install",
+				"LogType": ".log",
+				"LogFileName": "AppWorkload.log",
+				"Message": "[Win32App] lpExitCode is defined as Failed",
+				"ToolTipText": "",
+				"Color": "Red",
+				"DeveloperNotes": "Intune application installation Failed",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+      			"LinkToBlogArticle": ""
+			},
+			{
+				"CategoryName": "Intune - IME Applications Install",
+				"LogType": ".log",
+				"LogFileName": "AppWorkload.log",
+				"Message": "[Win32App] lpExitCode",
+				"ToolTipText": "",
+				"Color": "Yellow",
+				"DeveloperNotes": "Intune application installation exitCode",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+      			"LinkToBlogArticle": ""
+			},
+			{
+				"CategoryName": "Intune - IME Applications Detection",
+				"LogType": ".log",
+				"LogFileName": "AppWorkload.log",
+				"Message": ".*applicationDetected: True.*",
+				"ToolTipText": "",
+				"Color": "Green",
+				"DeveloperNotes": "This has Intune App detection check Detected True result",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+      			"LinkToBlogArticle": ""
+			},
+			{
+				"CategoryName": "Intune - IME Applications Detection",
+				"LogType": ".log",
+				"LogFileName": "AppWorkload.log",
+				"Message": "[Win32App][WinGetApp][WinGetOperation] Starting Detection for app with id",
+				"ToolTipText": "",
+				"Color": "",
+				"DeveloperNotes": "Intune Winget app detection start",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+      			"LinkToBlogArticle": ""
+			},
+			{
+				"CategoryName": "Intune - IME Applications Detection",
+				"LogType": ".log",
+				"LogFileName": "AppWorkload.log",
+				"Message": "[Win32App][DetectionActionHandler] Detection for policy with id",
+				"ToolTipText": "",
+				"Color": "",
+				"DeveloperNotes": "Intune Winget and Win32 app detection end",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+      			"LinkToBlogArticle": ""
+			}
+		]
+	}
+]

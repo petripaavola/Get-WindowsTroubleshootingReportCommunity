@@ -1,0 +1,5 @@
+Sysinternals Procmon trace processing is working but it is experimental feature.
+
+Challenge is that the report get huge with just a really short time range in Procmon trace.
+
+But here it is still though! :)

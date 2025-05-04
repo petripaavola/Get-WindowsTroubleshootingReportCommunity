@@ -1,0 +1,56 @@
+[
+	{
+		"CategoryName": "Windows - Application installation MSI",
+		"KnownEventRules": [
+			{
+				"CategoryName": "Windows - Application installation MSI",
+				"LogType": ".evtx",
+				"Channel": "Application",
+				"Id": 1033,
+				"ProviderName": "MsiInstaller",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": false,
+				"ToolTipText": "Windows Installer installed the product. Check if it succeeded or failed!",
+				"Color": "Yellow",
+				"DeveloperNotes": "Windows Installer installed the product. Product Name: Mozilla Firefox 130.0 x64 en-US. Product Version: 130.0.0.0. Product Language: 0. Manufacturer: Mozilla. Installation success or error status: 0. OR Installation success or error status: 1603",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+				"LinkToBlogArticle": null
+			},
+			{
+				"CategoryName": "Windows - Application installation MSI",
+				"LogType": ".evtx",
+				"Channel": "Application",
+				"Id": 1034,
+				"ProviderName": "MsiInstaller",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": false,
+				"ToolTipText": "Windows Installer removed the product.",
+				"Color": "Green",
+				"DeveloperNotes": "Windows Installer removed the product. Product Name: Microsoft Teams Meeting Add-in for Microsoft Office. Product Version: 1.24.19202. Product Language: 1033. Manufacturer: Microsoft. Removal success or error status: 0."
+			},
+			{
+				"CategoryName": "Windows - Application installation MSI",
+				"LogType": ".evtx",
+				"Channel": "Application",
+				"Id": 1040,
+				"ProviderName": "MsiInstaller",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": false,
+				"ToolTipText": "Beginning a Windows Installer transaction",
+				"DeveloperNotes": "Beginning a Windows Installer transaction: C:\\Users\\username\\AppData\\Local\\Temp\\MicrosoftEdgeDownloads\\5a6b708b-8605-4f36-a705-e192ca521b7c\\Firefox Setup 130.0.msi. Client Process Id: 118392."
+			},
+			{
+				"CategoryName": "Windows - Application installation MSI",
+				"LogType": ".evtx",
+				"Channel": "Application",
+				"Id": 11708,
+				"ProviderName": "MsiInstaller",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": false,
+				"ToolTipText": "MSI Installation failed!",
+				"Color": "Red",
+				"DeveloperNotes": "Product: Microsoft EPM Agent -- Installation failed."
+			}
+		]
+	}
+]

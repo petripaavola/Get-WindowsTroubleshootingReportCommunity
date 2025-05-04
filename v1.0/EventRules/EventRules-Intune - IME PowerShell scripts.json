@@ -1,0 +1,77 @@
+[
+	{
+		"CategoryName": "Intune - IME Powershell scripts output (all scripts)",
+		"KnownEventRules": [
+			{
+				"CategoryName": "Intune - IME Powershell scripts output (all scripts)",
+				"LogType": ".log",
+				"LogFileName": "AgentExecutor.log",
+				"Message": "write output done. output = ",
+				"MessageToolTip": "",
+				"Color": "Yellow",
+				"DeveloperNotes": "This is output from any PowerShell script including PowerShell platform scripts and detection scripts. This does not include Intune Remediation scripts output",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+      			"LinkToBlogArticle": ""
+			}
+		]
+	},
+	{
+		"CategoryName": "Intune - IME Powershell Platform scripts - 1. Start",
+		"KnownEventRules": [
+			{
+				"CategoryName": "Intune - IME Powershell Platform scripts - 1. Start",
+				"LogType": ".log",
+				"LogFileName": "IntuneManagementExtension.log",
+				"Message": "[PowerShell] Processing policy with id =",
+				"MessageToolTip": "",
+				"Color": "White",
+				"DeveloperNotes": "This is start processing Intune Powershell platform script",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+      			"LinkToBlogArticle": ""
+			}
+		]
+	},
+	{
+		"CategoryName": "Intune - IME Powershell Platform scripts - 2. Script in clear text",
+		"KnownEventRules": [
+			{
+				"CategoryName": "Intune - IME Powershell Platform scripts - 2. Script in clear text",
+				"LogType": ".log",
+				"LogFileName": "IntuneManagementExtension.log",
+				"Message": "[PowerShell] Policy body = ",
+				"MessageToolTip": "",
+				"Color": "Yellow",
+				"DeveloperNotes": "This is Intune Powershell script body as is",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+      			"LinkToBlogArticle": ""
+			}
+		]
+	},
+	{
+		"CategoryName": "Intune - IME Powershell Platform scripts - 3. Result",
+		"KnownEventRules": [
+			{
+				"CategoryName": "Intune - IME Powershell Platform scripts - 3. Result",
+				"LogType": ".log",
+				"LogFileName": "IntuneManagementExtension.log",
+				"Message": ".*policy result = Success.*",
+				"MessageToolTip": "",
+				"Color": "Green",
+				"DeveloperNotes": "This is result for Intune Powershell platform script",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+      			"LinkToBlogArticle": ""
+			},
+			{
+				"CategoryName": "Intune - IME Powershell Platform scripts - 3. Result",
+				"LogType": ".log",
+				"LogFileName": "IntuneManagementExtension.log",
+				"Message": ".*policy result = Failed.*",
+				"MessageToolTip": "",
+				"Color": "Red",
+				"DeveloperNotes": "This is result for Intune Powershell platform script",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+      			"LinkToBlogArticle": ""
+			}
+		]
+	}
+]

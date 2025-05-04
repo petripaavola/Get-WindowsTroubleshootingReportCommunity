@@ -1,0 +1,49 @@
+[
+	{
+		"CategoryName": "Windows - Bitlocker",
+		"KnownEventRules": [
+			{
+				"CategoryName": "Windows - Bitlocker",
+				"LogType": ".evtx",
+				"Channel": "Microsoft-Windows-BitLocker/BitLocker Management",
+				"Id": 853,
+				"ProviderName": "Microsoft-Windows-BitLocker-API",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": false,
+				"ToolTipText": "Failed to enable Silent Encryption. TPM is not available.\\n\\nWith Virtual Machines this is either forgotten TPM enablement or maybe more common mounted .ISO image in VM DVD drive",
+				"Color": "Red",
+				"DeveloperNotes": "Failed to enable Silent Encryption. TPM is not available. With Virtual Machines this is either forgotten TPM enablement or maybe more common mounted .ISO image in VM DVD drive",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+				"LinkToBlogArticle": null
+			},
+			{
+				"CategoryName": "Windows - Bitlocker",
+				"LogType": ".evtx",
+				"Channel": "Microsoft-Windows-BitLocker/BitLocker Management",
+				"Id": 845,
+				"ProviderName": "Microsoft-Windows-BitLocker-API",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": false,
+				"ToolTipText": "",
+				"Color": "Green",
+				"DeveloperNotes": "BitLocker Drive Encryption recovery information for volume %1 was backed up successfully to your Azure AD. Protector GUID: %2. TraceId: %3",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+				"LinkToBlogArticle": null
+			},
+			{
+				"CategoryName": "Windows - Bitlocker",
+				"LogType": ".evtx",
+				"Channel": "Microsoft-Windows-BitLocker/BitLocker Management",
+				"Id": 846,
+				"ProviderName": "Microsoft-Windows-BitLocker-API",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": false,
+				"ToolTipText": "",
+				"Color": "Red",
+				"DeveloperNotes": "Failed to backup BitLocker Drive Encryption recovery information for volume %1 to your Azure AD. TraceId: %2 Error: %3",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+				"LinkToBlogArticle": null
+			}
+		]
+	}
+]

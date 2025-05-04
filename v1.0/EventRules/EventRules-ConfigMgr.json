@@ -1,0 +1,160 @@
+[
+    {
+		"CategoryName": "ConfigMgr - Task Sequence",
+		"KnownEventRules": [
+			{
+				"CategoryName": "ConfigMgr - Task Sequence",
+				"LogType": ".log",
+				"LogFileName": "smsts.log",
+				"Message": "TSManager initialized environment for task sequence:",
+				"ToolTipText": "",
+				"Color": "Yellow",
+				"DeveloperNotes": "Task Sequence start and TaskSequence name",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+				"LinkToBlogArticle": null
+			},
+			{
+				"CategoryName": "ConfigMgr - Task Sequence",
+				"LogType": ".log",
+				"LogFileName": "smsts.log",
+				"Message": "Start executing an instruction. Instruction name:",
+				"ToolTipText": "",
+				"Color": "Yellow",
+				"DeveloperNotes": "Individual Task Sequence steps",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+				"LinkToBlogArticle": null
+			},
+			{
+				"CategoryName": "ConfigMgr - Task Sequence",
+				"LogType": ".log",
+				"LogFileName": "smsts.log",
+				"Message": "Successfully completed the action",
+				"ToolTipText": "",
+				"Color": "Green",
+				"DeveloperNotes": "",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+				"LinkToBlogArticle": null
+			},
+			{
+				"CategoryName": "ConfigMgr - Task Sequence",
+				"LogType": ".log",
+				"LogFileName": "smsts.log",
+				"Message": "Execution engine result code: Success",
+				"ToolTipText": "",
+				"Color": "Green",
+				"DeveloperNotes": "",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+				"LinkToBlogArticle": null
+			},
+			{
+				"CategoryName": "ConfigMgr - Task Sequence",
+				"LogType": ".log",
+				"LogFileName": "smsts.log",
+				"Message": "Execution engine result code: Reboot",
+				"ToolTipText": "",
+				"Color": "Yellow",
+				"DeveloperNotes": "",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+				"LinkToBlogArticle": null
+			},
+			{
+				"CategoryName": "ConfigMgr - Task Sequence",
+				"LogType": ".log",
+				"LogFileName": "smsts.log",
+				"Message": "Execution engine result code: Fail",
+				"ToolTipText": "",
+				"Color": "Red",
+				"DeveloperNotes": "This is just a guess. Did not find example from log files.",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+				"LinkToBlogArticle": null
+			}
+		]
+	},
+	{
+		"CategoryName": "ConfigMgr - App Enforcement",
+		"KnownEventRules": [
+			{
+				"CategoryName": "ConfigMgr - App Enforcement",
+				"LogType": ".log",
+				"LogFileName": "appenforce.log",
+				"Message": "+++ Starting Install enforcement for App",
+				"ToolTipText": "",
+				"Color": "Yellow",
+				"DeveloperNotes": "",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+				"LinkToBlogArticle": null
+			},
+			{
+				"CategoryName": "ConfigMgr - App Enforcement",
+				"LogType": ".log",
+				"LogFileName": "appenforce.log",
+				"Message": "++++++ App enforcement completed",
+				"ToolTipText": "",
+				"Color": "Green",
+				"DeveloperNotes": "",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+				"LinkToBlogArticle": null
+			},
+			{
+				"CategoryName": "ConfigMgr - App Enforcement",
+				"LogType": ".log",
+				"LogFileName": "appenforce.log",
+				"Message": "+++ Discovered application",
+				"ToolTipText": "",
+				"Color": "",
+				"DeveloperNotes": "",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+				"LinkToBlogArticle": null
+			},
+			{
+				"CategoryName": "ConfigMgr - App Enforcement",
+				"LogType": ".log",
+				"LogFileName": "appenforce.log",
+				"Message": "+++ Application not discovered - THIS IS NOT ACTIVE NOW, MAYBE NOT NEEDED ?",
+				"ToolTipText": "",
+				"Color": "Yellow",
+				"DeveloperNotes": "+++ Application not discovered",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+				"LinkToBlogArticle": null
+			},
+			{
+				"CategoryName": "ConfigMgr - App Enforcement",
+				"LogType": ".log",
+				"LogFileName": "appenforce.log",
+				"Message": "Unmatched exit code",
+				"ToolTipText": "",
+				"Color": "Red",
+				"DeveloperNotes": "Unmatched exit code (1) is considered an execution failure.",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+				"LinkToBlogArticle": null
+			}
+		]
+	},
+	{
+		"CategoryName": "ConfigMgr - Windows Updates",
+		"KnownEventRules": [
+			{
+				"CategoryName": "ConfigMgr - Windows Updates",
+				"LogType": ".log",
+				"LogFileName": "wuahandler.log",
+				"Message": "Update (Installed):",
+				"ToolTipText": "",
+				"Color": "Green",
+				"DeveloperNotes": "",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+				"LinkToBlogArticle": null
+			},
+			{
+				"CategoryName": "ConfigMgr - Windows Updates",
+				"LogType": ".log",
+				"LogFileName": "wuahandler.log",
+				"Message": "Failed to install updates.",
+				"ToolTipText": "",
+				"Color": "Red",
+				"DeveloperNotes": "",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+				"LinkToBlogArticle": null
+			}
+		]
+	}
+]

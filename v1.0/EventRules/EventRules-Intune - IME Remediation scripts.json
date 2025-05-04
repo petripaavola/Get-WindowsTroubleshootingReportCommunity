@@ -1,0 +1,53 @@
+[
+	{
+		"CategoryName": "Intune - IME Remediation scripts - 1. Start",
+		"KnownEventRules": [
+			{
+				"CategoryName": "Intune - IME Remediation scripts - 1. Start",
+				"LogType": ".log",
+				"LogFileName": "healthscripts.log",
+				"Message": "[HS] Processing policy with id =",
+				"ToolTipText": "Intune Remediation or custom compliance check script start entry",
+				"Color": "White",
+				"DeveloperNotes": ""
+			}
+		]
+	},
+	{
+		"CategoryName": "Intune - IME Remediation scripts - 2. Output",
+		"KnownEventRules": [
+			{
+				"CategoryName": "Intune - IME Remediation scripts - 2. Output",
+				"LogType": ".log",
+				"LogFileName": "healthscripts.log",
+				"Message": "[HS] std output =",
+				"ToolTipText": "Intune Remediation or custom compliance check script Output",
+				"Color": "Yellow",
+				"DeveloperNotes": ""
+			},
+			{
+				"CategoryName": "Intune - IME Remediation scripts - 2. Output",
+				"LogType": ".log",
+				"LogFileName": "healthscripts.log",
+				"Message": "[HS] err output =",
+				"ToolTipText": "Intune Remediation or custom compliance check script Output",
+				"Color": "Yellow",
+				"DeveloperNotes": ""
+			}
+		]
+	},
+	{
+		"CategoryName": "Intune - IME Remediation scripts - 3. Result",
+		"KnownEventRules": [
+			{
+				"CategoryName": "Intune - IME Remediation scripts - 3. Result",
+				"LogType": ".log",
+				"LogFileName": "healthscripts.log",
+				"Message": "[HS] the pre-remdiation detection script compliance result for",
+				"ToolTipText": "[HS] the pre-remdiation detection script compliance result for 4b84b5fc-4b32-4507-9ba7-ab39119433ef is False",
+				"Color": "Yellow",
+				"DeveloperNotes": ""
+			}
+		]
+	}
+]

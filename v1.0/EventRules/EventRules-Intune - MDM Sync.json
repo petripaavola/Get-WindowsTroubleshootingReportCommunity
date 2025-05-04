@@ -1,0 +1,91 @@
+[
+	{
+	  "CategoryName": "Intune - MDM Sync",
+	  "KnownEventRules": [
+		{
+		"CategoryName": "Intune - MDM Sync",
+		  "LogType": ".evtx",
+		  "Channel": "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Sync",
+		  "Id": 201,
+		  "ProviderName": "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider",
+		  "IncludeEventXMLDataInMessage": false,
+		  "IncludeEventXMLDataInToolTip": false,
+		  "ToolTipText": "",
+		  "Color": "Red",
+		  "DeveloperNotes": "MDM Session: OMA-DM message failed to be sent. Result: (%1).\u0000",
+		  "Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+		  "LinkToBlogArticle": ""
+		},
+		{
+		  "CategoryName": "Intune - MDM Sync",
+		  "LogType": ".evtx",
+		  "Channel": "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Sync",
+		  "Id": 204,
+		  "ProviderName": "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider",
+		  "IncludeEventXMLDataInMessage": false,
+		  "IncludeEventXMLDataInToolTip": false,
+		  "ToolTipText": "",
+		  "Color": "Red",
+		  "DeveloperNotes": "MDM Session: OMA-DM client failed to connect to the server. Result: (%1).\u0000",
+		  "Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+		  "LinkToBlogArticle": ""
+		},
+		{
+		  "CategoryName": "Intune - MDM Sync",
+		  "LogType": ".evtx",
+		  "Channel": "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Sync",
+		  "Id": 205,
+		  "ProviderName": "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider",
+		  "IncludeEventXMLDataInMessage": false,
+		  "IncludeEventXMLDataInToolTip": false,
+		  "ToolTipText": "",
+		  "Color": "Yellow",
+		  "DeveloperNotes": "MDM Session: OMA-DM client started. CV: (%1).\u0000",
+		  "Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+		  "LinkToBlogArticle": ""
+		},
+		{
+		  "CategoryName": "Intune - MDM Sync",
+		  "LogType": ".evtx",
+		  "Channel": "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Sync",
+		  "Id": 206,
+		  "ProviderName": "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider",
+		  "IncludeEventXMLDataInMessage": false,
+		  "IncludeEventXMLDataInToolTip": false,
+		  "ToolTipText": "",
+		  "Color": "",
+		  "DeveloperNotes": "MDM Session: OMA-DM session Init: UserSID(%1), EnrolledUser(%2), UserToken(%3), DeviceToken(%4), EnrollmentType(%5), SyncType(%6).\u0000",
+		  "Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+		  "LinkToBlogArticle": ""
+		},
+		{
+		  "CategoryName": "Intune - MDM Sync",
+		  "LogType": ".evtx",
+		  "Channel": "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Sync",
+		  "Id": 209,
+		  "ProviderName": "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider",
+		  "IncludeEventXMLDataInMessage": false,
+		  "IncludeEventXMLDataInToolTip": false,
+		  "ToolTipText": "",
+		  "Color": "Green",
+		  "DeveloperNotes": "MDM Session: OMA-DM session ended with status: (%1).\u0000",
+		  "Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+		  "LinkToBlogArticle": ""
+		},
+		{
+		  "CategoryName": "Intune - MDM Sync",
+		  "LogType": ".evtx",
+		  "Channel": "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Debug",
+		  "Id": 210,
+		  "ProviderName": "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider",
+		  "IncludeEventXMLDataInMessage": false,
+		  "IncludeEventXMLDataInToolTip": false,
+		  "ToolTipText": "",
+		  "Color": "Red",
+		  "DeveloperNotes": "MDM Session: OMA-DM client stopped with status: (%1).\u0000",
+		  "Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+		  "LinkToBlogArticle": ""
+		}
+	  ]
+	}
+]

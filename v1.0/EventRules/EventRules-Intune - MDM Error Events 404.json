@@ -1,0 +1,21 @@
+[
+	{
+		"CategoryName": "Intune - MDM Failed policies 404",
+		"KnownEventRules": [
+			{
+				"CategoryName": "Intune - MDM Failed policies 404",
+				"LogType": ".evtx",
+				"Channel": "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Admin",
+				"Id": 404,
+				"ProviderName": "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": false,
+				"ToolTipText": "Error with Intune MDM policies!",
+				"Color": "Red",
+				"DeveloperNotes": "Error: MDM ConfigurationManager: Command failure status. ",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+				"LinkToBlogArticle": null
+			}
+		]
+	}
+]

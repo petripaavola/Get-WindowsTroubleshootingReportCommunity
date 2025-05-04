@@ -1,0 +1,40 @@
+[
+	{
+		"CategoryName": "Windows - Scheduled Tasks",
+		"KnownEventRules": [
+			{
+				"CategoryName": "Windows - Scheduled Tasks",
+				"LogType": "ScheduledTasks",
+				"Channel": "Scheduled Tasks",
+				"Id": 0,
+				"ProviderName": "Scheduled Tasks",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": false,
+				"ToolTipText": "",
+				"Color": "",
+				"DeveloperNotes": "DO NOT REMOVE ME! Internal CategoryName so you can Include or Exclude Scheduled Tasks from report",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+				"LinkToBlogArticle": null
+			}
+		]
+	},
+	{
+		"CategoryName": "Windows - Scheduled Tasks Future",
+		"KnownEventRules": [
+			{
+				"CategoryName": "Scheduled Tasks Future",
+				"LogType": "ScheduledTasks",
+				"Channel": "Scheduled Tasks Future",
+				"Id": 0,
+				"ProviderName": "Scheduled Tasks Future",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": false,
+				"ToolTipText": "",
+				"Color": "",
+				"DeveloperNotes": "DO NOT REMOVE ME! Internal CategoryName so you can Include or Exclude Scheduled Tasks Future from report",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+				"LinkToBlogArticle": null
+			}
+		]
+	}
+]

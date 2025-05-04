@@ -1,0 +1,103 @@
+{
+  "CategoryName": "Intune - MDM Enrollment",
+  "KnownEventRules": [
+    {
+      "CategoryName": "Intune - MDM Enrollment",
+      "LogType": ".evtx",
+      "Channel": "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Enrollment",
+      "Id": 16,
+      "ProviderName": "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider",
+      "IncludeEventXMLDataInMessage": false,
+      "IncludeEventXMLDataInToolTip": false,
+      "ToolTipText": "",
+      "Color": "",
+      "DeveloperNotes": "MDM Enroll: OMA-DM client configuration succeeds.\u0000",
+      "Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+      "LinkToBlogArticle": ""
+    },
+    {
+      "CategoryName": "Intune - MDM Enrollment",
+      "LogType": ".evtx",
+      "Channel": "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Enrollment",
+      "Id": 17,
+      "ProviderName": "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider",
+      "IncludeEventXMLDataInMessage": false,
+      "IncludeEventXMLDataInToolTip": false,
+      "ToolTipText": "",
+      "Color": "Red",
+      "DeveloperNotes": "MDM Enroll: OMA-DM client configuration failed. RAWResult: (%1) Result: (%2).\u0000",
+      "Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+      "LinkToBlogArticle": ""
+    },
+    {
+      "CategoryName": "Intune - MDM Enrollment",
+      "LogType": ".evtx",
+      "Channel": "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Debug",
+      "Id": 27,
+      "ProviderName": "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider",
+      "IncludeEventXMLDataInMessage": false,
+      "IncludeEventXMLDataInToolTip": false,
+      "ToolTipText": "",
+      "Color": "",
+      "DeveloperNotes": "MDM Enroll: AutoEnrollMDM Result: (%3) PolicyValue: (%1) AADCredentialType: (%2).\u0000",
+      "Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+      "LinkToBlogArticle": ""
+    },
+    {
+      "CategoryName": "Intune - MDM Enrollment",
+      "LogType": ".evtx",
+      "Channel": "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Enrollment",
+      "Id": 58,
+      "ProviderName": "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider",
+      "IncludeEventXMLDataInMessage": false,
+      "IncludeEventXMLDataInToolTip": false,
+      "ToolTipText": "",
+      "Color": "",
+      "DeveloperNotes": "MDM Enroll: Provisioning succeeded.\u0000",
+      "Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+      "LinkToBlogArticle": ""
+    },
+    {
+      "CategoryName": "Intune - MDM Enrollment",
+      "LogType": ".evtx",
+      "Channel": "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Enrollment",
+      "Id": 57,
+      "ProviderName": "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider",
+      "IncludeEventXMLDataInMessage": false,
+      "IncludeEventXMLDataInToolTip": false,
+      "ToolTipText": "",
+      "Color": "Red",
+      "DeveloperNotes": "MDM Enroll: Provisioning failed. Result: (%1).\u0000",
+      "Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+      "LinkToBlogArticle": ""
+    },
+    {
+      "CategoryName": "Intune - MDM Enrollment",
+      "LogType": ".evtx",
+      "Channel": "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Enrollment",
+      "Id": 71,
+      "ProviderName": "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider",
+      "IncludeEventXMLDataInMessage": false,
+      "IncludeEventXMLDataInToolTip": false,
+      "ToolTipText": "",
+      "Color": "Red",
+      "DeveloperNotes": "MDM Enroll: Failed (%1)\u0000",
+      "Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+      "LinkToBlogArticle": ""
+    },
+    {
+      "CategoryName": "Intune - MDM Enrollment",
+      "LogType": ".evtx",
+      "Channel": "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Enrollment",
+      "Id": 72,
+      "ProviderName": "Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider",
+      "IncludeEventXMLDataInMessage": false,
+      "IncludeEventXMLDataInToolTip": false,
+      "ToolTipText": "",
+      "Color": "",
+      "DeveloperNotes": "MDM Enroll: Succeeded\u0000",
+      "Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+      "LinkToBlogArticle": ""
+    }
+  ]
+}
