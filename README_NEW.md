@@ -44,13 +44,12 @@ Join the community to contribute and share custom event detection rules for even
 - New console UI look  
 - Improved HTML report  
 - Expanded out-of-box **KnownEvent** rules  
-- Bugfix for KnownEvents in multi-log scenarios  
 
 ---
 
 ## 📸 Screenshots
 
-> 📍 Add screenshots here to visually showcase the timeline, grid filtering, or known event highlights.
+> 📍 Screenshots coming soon
 
 ```markdown
 ![Timeline Example](./images/timeline-sample.png)
@@ -69,11 +68,12 @@ Join the community to contribute and share custom event detection rules for even
 
 ## 🛠️ Features
 
-- **Event Log Support**: Read Windows Event logs from live systems or Intune diagnostics packages (.zip).
+- **Event Log Support**: Read Windows Event logs from live Windows systems or Intune DiagLogs packages (.zip). Extract .zip file first.
 - **Log File Support**: Analyze structured log files containing dateTime and message fields.
-- **Unified Timeline**: Merge event and log file data chronologically.
+- **Unified Timeline**: **Merge event and log file data chronologically.**
 - **Rich HTML Reports**: Real-time filtering and searchable HTML output.
 - **Scenario-Based Troubleshooting**: Focused support for updates, installs, Intune, etc.
+- **Full logs reporting**: Include all logs to report to understand what is happening in all logs.
 - **Custom Event Detection**: Detect specific events using customizable `EventRules.json`.
 - **Community-Driven**: Share your rules and help others troubleshoot.
 
@@ -82,34 +82,34 @@ Join the community to contribute and share custom event detection rules for even
 ## ▶️ Usage Examples
 
 ```powershell
-# Get known events from last 1 day
-./Get-WindowsTroubleshootingReportCommunity.ps1 -LastDays 1
+# Get only KNOWN Events. KnownEvents categories and tima range is selected from graphical UI
+./Get-WindowsTroubleshootingReportCommunity_v1.0.ps1
 
-# Full capture from last 5 minutes
-./Get-WindowsTroubleshootingReportCommunity.ps1 -LastMinutes 5 -AllEvents
-
-# Events 2 minutes before and after last reboot
-./Get-WindowsTroubleshootingReportCommunity.ps1 -MinutesBeforeLastBoot 2 -MinutesAfterLastBoot 2 -AllEvents
+# Get ALL Events. KnownEvents categories, Event logs and log files and tima range is selected from graphical UI
+./Get-WindowsTroubleshootingReportCommunity_v1.0.ps1 -AllEvents
 
 # From folder with known events only
-./Get-WindowsTroubleshootingReportCommunity.ps1 -LogFilesFolder "C:\path\to\logs" -LastDays 2
+./Get-WindowsTroubleshootingReportCommunity_v1.0.ps1 -LogFilesFolder "C:\Logs\DiagLogs-COMPUTERNAME"
+
+# From folder with ALL events
+./Get-WindowsTroubleshootingReportCommunity_v1.0.ps1 -LogFilesFolder "C:\Logs\DiagLogs-COMPUTERNAME" -AllEvents
+
+# Known events between two times
+./Get-WindowsTroubleshootingReportCommunity_v1.0.ps1 -LogFilesFolder "C:\Logs\DiagLogs-COMPUTERNAME" -StartTime "2024-12-02 08:00:00" -EndTime "2024-12-02 18:00:00"
 
 # All events between two times
-./Get-WindowsTroubleshootingReportCommunity.ps1 -LogFilesFolder "C:\path\to\logs" -AllEvents -StartTime "2024-09-01 00:00:00" -EndTime "2024-09-01 00:05:00"
+./Get-WindowsTroubleshootingReportCommunity_v1.0.ps1 -LogFilesFolder "C:\Logs\DiagLogs-COMPUTERNAME" -StartTime "2024-12-02 08:00:00" -EndTime "2024-12-02 18:00:00" -AllEvents
 ```
 
 ---
 
 ## ⚙️ Parameters
 
-- `-LogFile`: Single .evtx or log file.
-- `-LogFilesFolder`: Folder with multiple .evtx/log files.
-- `-LastMinutes`, `-LastHours`, `-LastDays`: Choose time range.
-- `-MinutesBeforeLastBoot`, `-MinutesAfterLastBoot`: Boot window capture.
-- `-StartTime`, `-EndTime`: Specify exact range.
 - `-AllEvents`: Include all events (not just known).
+- `-LogFilesFolder`: Folder with multiple .evtx/log files.
+- `-StartTime`, `-EndTime`: Specify exact range.
 - `-LogViewerUI`: Launch log review UI.
-- `-RealtimeLogViewerUI`: Real-time log monitoring UI.
+- `-RealtimeLogViewerUI`: Real-time Event logs monitoring UI.
 - `-IncludeSelectedKnownRulesCategoriesOnly`: Filter by known rules.
 - `-ExcludeSelectedKnownRulesCategories`: Exclude rule categories.
 - `-SortDescending`: Sort newest-first.
@@ -137,14 +137,14 @@ Join the community to contribute and share custom event detection rules for even
 ## 🧪 Scenarios
 
 - **Windows Update**: Status, success/fail, reboots.
-- **Intune**: Enrollment, sync, script/app errors.
+- **Intune**: Enrollment, sync, script/app information and errors.
 - **Defender for Endpoint**: AV definitions and scans.
 - **Software Installs**: MSI/Store installs and issues.
 - **System Events**: Restarts, sleep, driver changes.
 
 ---
 
-## 📊 Example Reports
+## 📊 Example Reports (Coming soon)
 
 - **Timeline View**
 - **Filtered Report**: Only known events or categories
@@ -160,7 +160,7 @@ Join the community to contribute and share custom event detection rules for even
 ## 🗂️ Supported Log Files and Event Logs
 
 - Full support for **.evtx** logs (online/offline)
-- Support for **CMTrace-style .log** files
+- Support for Intune and ConfigMgr **CMTrace-style .log** files
 - Experimental support for **Procmon CSV**
 - Future: CBS.log, DISM.log, .etl, etc.
 
@@ -168,7 +168,7 @@ Join the community to contribute and share custom event detection rules for even
 
 ## 🔐 Do I Need Admin Rights?
 
-- Not required, but highly recommended for full access
+- Not required, but highly recommended for full access to Windows Event logs
 - **Admin = better coverage**
 - Offline logs don’t require admin
 
@@ -176,8 +176,8 @@ Join the community to contribute and share custom event detection rules for even
 
 ## 🧩 PowerShell Support
 
+- ✅ PowerShell Core (7.x) - This is preferred and faster!
 - ✅ Windows PowerShell 5.1
-- ✅ PowerShell Core (7.x)
 
 ---
 
@@ -190,6 +190,7 @@ MIT License — see [LICENSE.md](LICENSE.md)
 ## 👨‍💻 Contributors
 
 - **Petri Paavola** – *Author* (Microsoft MVP - Windows and Intune)
+- Petri.Paavola@yodamiitti.fi
 
 ---
 
