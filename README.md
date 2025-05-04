@@ -1,4 +1,4 @@
-# 🚀 Get-WindowsTroubleshootingReportCommunity v1.0
+# Get-WindowsTroubleshootingReportCommunity v1.0 🚀
 
 ![Version](https://img.shields.io/badge/version-1.0-blue.svg)
 ![PowerShell](https://img.shields.io/badge/PowerShell-5.1%20%7C%207.x-blue.svg)
@@ -12,27 +12,27 @@ Join the community to contribute and share custom event detection rules for even
 
 ---
 
-## 📚 Table of Contents
+## Table of Contents 📚
 
 - [What's New (v1.0)](#whats-new-v10)
 - [Features](#features)
-- [Usage](#usage)
+- [Usage Examples](#usage-examples)
 - [Parameters](#parameters)
 - [How It Works](#how-it-works)
 - [Contributing](#contributing)
 - [Scenarios](#scenarios)
-- [Example Reports](#example-reports)
+- [Example Reports](#example-reports-coming-soon)
 - [PowerShell Script Parameters](#powershell-script-parameters)
-- [Supported Log Formats](#supported-log-files-and-event-logs)
-- [Admin Rights](#do-i-need-to-use-administrative-rights)
-- [PowerShell Version Support](#windows-powershell-or-powershell-core)
+- [Supported Log Files and Event Logs](#supported-log-files-and-event-logs)
+- [Do I Need Admin Rights](#do-i-need-admin-rights)
+- [PowerShell Support](#powershell-support)
 - [License](#license)
 - [Contributors](#contributors)
-- [Acknowledgments](#acknowledgments-)
+- [Acknowledgments](#acknowledgments)
 
 ---
 
-## 📢 What's New (v1.0)
+## What's New (v1.0) 📢
 
 **🎉 First Public Release! (Finally 😀)**
 
@@ -47,7 +47,7 @@ Join the community to contribute and share custom event detection rules for even
 
 ---
 
-## 📸 Screenshots
+## Screenshots 📸
 
 > 📍 Screenshots
 
@@ -55,7 +55,7 @@ Join the community to contribute and share custom event detection rules for even
 
 ---
 
-## 🎥 Video Demo (Coming Soon)
+## Video Demo (Coming Soon) 🎥
 
 ```markdown
 [![Watch Demo](https://img.youtube.com/vi/yourvideoid/0.jpg)](https://www.youtube.com/watch?v=yourvideoid)
@@ -63,7 +63,7 @@ Join the community to contribute and share custom event detection rules for even
 
 ---
 
-## 🛠️ Features
+## Features 🛠️
 
 - **Event Log Support**: Read Windows Event logs from live Windows systems or Intune DiagLogs packages (.zip). Extract .zip file first.
 - **Log File Support**: Analyze structured log files containing dateTime and message fields.
@@ -76,13 +76,13 @@ Join the community to contribute and share custom event detection rules for even
 
 ---
 
-## ▶️ Usage Examples
+## Usage Examples ▶️
 
 ```powershell
-# Get only KNOWN Events. KnownEvents categories and tima range is selected from graphical UI
+# Get only KNOWN Events. KnownEvents categories and time range is selected from graphical UI
 ./Get-WindowsTroubleshootingReportCommunity_v1.0.ps1
 
-# Get ALL Events. KnownEvents categories, Event logs and log files and tima range is selected from graphical UI
+# Get ALL Events. KnownEvents categories, Event logs and log files and time range is selected from graphical UI
 ./Get-WindowsTroubleshootingReportCommunity_v1.0.ps1 -AllEvents
 
 # From folder with known events only
@@ -100,7 +100,7 @@ Join the community to contribute and share custom event detection rules for even
 
 ---
 
-## ⚙️ Parameters
+## Parameters ⚙️
 
 - `-AllEvents`: Include all events (not just known).
 - `-LogFilesFolder`: Folder with multiple .evtx/log files.
@@ -114,7 +114,7 @@ Join the community to contribute and share custom event detection rules for even
 
 ---
 
-## 🧠 How It Works
+## How It Works 🧠
 
 1. **Log Processing**: Parses event logs and .log files, combines them into timeline.
 2. **Report Generation**: Builds interactive HTML report with filters and search.
@@ -123,7 +123,7 @@ Join the community to contribute and share custom event detection rules for even
 
 ---
 
-## 🤝 Contributing
+## Contributing 🤝
 
 - Use `Create-EventRules-GUI-HelperTool.ps1` to create `EventRules.json`.
 - Add green (success) and red (fail) markers.
@@ -131,7 +131,7 @@ Join the community to contribute and share custom event detection rules for even
 
 ---
 
-## 🧪 Scenarios
+## Scenarios 🧪
 
 - **Windows Update**: Status, success/fail, reboots.
 - **Intune**: Enrollment, sync, script/app information and errors.
@@ -141,20 +141,20 @@ Join the community to contribute and share custom event detection rules for even
 
 ---
 
-## 📊 Example Reports (Coming soon)
+## Example Reports (Coming soon) 📊
 
 - **Timeline View**
 - **Filtered Report**: Only known events or categories
 
 ---
 
-## 📘 PowerShell Script Parameters
+## PowerShell Script Parameters 📘
 
 > Full parameter list is in the script comments or use `Get-Help`.
 
 ---
 
-## 🗂️ Supported Log Files and Event Logs
+## Supported Log Files and Event Logs 🗂️
 
 - Full support for **.evtx** logs (online/offline)
 - Support for Intune and ConfigMgr **CMTrace-style .log** files
@@ -163,7 +163,7 @@ Join the community to contribute and share custom event detection rules for even
 
 ---
 
-## 🔐 Do I Need Admin Rights?
+## Do I Need Admin Rights 🔐
 
 - Not required, but highly recommended for full access to Windows Event logs
 - **Admin = better coverage**
@@ -171,27 +171,27 @@ Join the community to contribute and share custom event detection rules for even
 
 ---
 
-## 🧩 PowerShell Support
+## PowerShell Support 🧩
 
 - ✅ PowerShell Core (7.x) - This is preferred and faster!
 - ✅ Windows PowerShell 5.1
 
 ---
 
-## 📄 License
+## License 📄
 
 MIT License — see [LICENSE.md](LICENSE.md)
 
 ---
 
-## 👨‍💻 Contributors
+## Contributors 👨‍💻
 
-- **Petri Paavola** – *Author* (Microsoft MVP - Windows and Intune)
-- Petri.Paavola@yodamiitti.fi
+- **Petri Paavola** – *Author* (Microsoft MVP - Windows and Intune)  
+  📧 Petri.Paavola@yodamiitti.fi
 
 ---
 
-## 🤖 Acknowledgments
+## Acknowledgments 🤖
 
 Special thanks to **GPT-4 from OpenAI** for helping with documentation generation, text refactoring, and markdown polishing. AI helped us work faster, so we can troubleshoot better. 💡
 
