@@ -35,6 +35,7 @@ Petri has helped thousands of IT pros automate and simplify log analysis — thi
 
 ---
 
+<a name="table-of-contents"></a>
 ## Table of Contents 📚
 
 - [What's New (v1.0)](#whats-new-v10)
@@ -277,4 +278,5 @@ MIT License — see [LICENSE.md](LICENSE.md)
 
 Special thanks to **GPT-4 from OpenAI** for helping with documentation generation, text refactoring, and markdown polishing. AI helped us work faster, so we can troubleshoot better. 💡
 
+[🔝 Back to top](#table-of-contents)
 ---
