@@ -49,12 +49,9 @@ Join the community to contribute and share custom event detection rules for even
 
 ## 📸 Screenshots
 
-> 📍 Screenshots coming soon
+> 📍 Screenshots
 
-```markdown
 ![Timeline Example](./images/KnownEvents.png)
-![Grid Filtering](./images/filter-example.png)
-```
 
 ---
 
