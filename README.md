@@ -1,4 +1,4 @@
-# Get-WindowsTroubleshootingReportCommunity ver 0.9
+# Get-WindowsTroubleshootingReportCommunity ver 1.0
 
 The **Ultimate Windows and Intune Troubleshooting Tool** for analyzing and visualizing Windows Event logs and log files. **Join the community** to contribute and share custom event detection rules for even better troubleshooting experiences.
 
@@ -29,7 +29,7 @@ Yes, there are lot's of thing to do to make this perfect but we'll get there som
 
 **And please share EventRules you have created**
 
-Download script package [Get-WindowsTroubleshootingReportCommunity_v0.9.zip](./Get-WindowsTroubleshootingReportCommunity_v0.9.zip)
+Download script package [Get-WindowsTroubleshootingReportCommunity_v1.0.zip](./Get-WindowsTroubleshootingReportCommunity_v1.0.zip)
 
 ## Features
 - **Event Log Support**: Reads Windows Event logs either from live systems or from diagnostics packages (.zip) downloaded via Intune.
