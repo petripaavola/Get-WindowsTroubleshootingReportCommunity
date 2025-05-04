@@ -98,6 +98,7 @@ Petri has helped thousands of IT pros automate and simplify log analysis — thi
 - **Scenario-Based Troubleshooting**: Focused support for updates, installs, Intune, etc.
 - **Full logs reporting**: Include all logs to report to understand what is happening in all logs.
 - **Custom Event Detection**: Detect specific events using customizable `EventRules.json`.
+- **GUIDs to real names**: Tool translates known GUIDs to real names, for example Intune Apps and Scripts names
 - **Community-Driven**: Share your rules and help others troubleshoot.
 
 ---
