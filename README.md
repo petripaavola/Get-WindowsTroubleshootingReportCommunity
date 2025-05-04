@@ -57,10 +57,6 @@ Join the community to contribute and share custom event detection rules for even
 
 ## Video Demo (Coming Soon) 🎥
 
-```markdown
-[![Watch Demo](https://img.youtube.com/vi/yourvideoid/0.jpg)](https://www.youtube.com/watch?v=yourvideoid)
-```
-
 ---
 
 ## Features 🛠️
