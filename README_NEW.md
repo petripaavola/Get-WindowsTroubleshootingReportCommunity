@@ -52,7 +52,7 @@ Join the community to contribute and share custom event detection rules for even
 > 📍 Screenshots coming soon
 
 ```markdown
-![Timeline Example](./images/timeline-sample.png)
+![Timeline Example](./images/KnownEvents.png)
 ![Grid Filtering](./images/filter-example.png)
 ```
 
