@@ -1,14 +1,37 @@
-# Get-WindowsTroubleshootingReportCommunity v1.0 🚀
+# 🧠 Get-WindowsTroubleshootingReportCommunity v1.0
 
 ![Version](https://img.shields.io/badge/version-1.0-blue.svg)
 ![PowerShell](https://img.shields.io/badge/PowerShell-5.1%20%7C%207.x-blue.svg)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-The **Ultimate Windows and Intune Troubleshooting Tool** for analyzing and visualizing Windows Event logs and structured log files.
+---
 
-Download: [📦 Get-WindowsTroubleshootingReportCommunity_v1.0.zip](./Get-WindowsTroubleshootingReportCommunity_v1.0.zip)
+## 🔥 The First & Only Tool That Combines Windows Event Logs + .log Files into a Single Unified Timeline Report
 
-Join the community to contribute and share custom event detection rules for even better troubleshooting experiences.
+Forget siloed logs. This tool **redefines Windows and Intune troubleshooting** by doing what no other tool can:
+
+✅ Merge Event Logs (`.evtx`) and traditional `.log` files  
+✅ Present everything in a **single, chronological timeline**  
+✅ Detect known issues using **community-driven rules**  
+✅ Generate clean, interactive **HTML reports with filtering**  
+✅ Works with live systems or offline Intune diagnostic packages
+
+> **Built by IT Pros, for IT Pros** — this is your all-in-one troubleshooting lens.  
+> It’s not just a script. It’s a **community-powered log intelligence engine**.
+
+---
+
+### 👨‍💻 About the Author
+
+This groundbreaking tool was created by **Petri Paavola**,  
+🎖️ *Microsoft MVP (Windows and Intune)* and creator of the widely used  
+🔧 [Get-IntuneManagementExtensionDiagnostics](https://github.com/petripaavola/Get-IntuneManagementExtensionDiagnostics) tool.
+
+Petri has helped thousands of IT pros automate and simplify log analysis — this tool takes it to the next level.
+
+---
+
+📦 [**Download the Tool**](./Get-WindowsTroubleshootingReportCommunity_v1.0.zip) and start seeing the full story in your logs.
 
 ---
 
