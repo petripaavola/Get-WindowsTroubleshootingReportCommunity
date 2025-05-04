@@ -187,7 +187,7 @@ MIT License — see [LICENSE.md](LICENSE.md)
 
 ---
 
-## Acknowledgments 🤖
+## Acknowledgments
 
 Special thanks to **GPT-4 from OpenAI** for helping with documentation generation, text refactoring, and markdown polishing. AI helped us work faster, so we can troubleshoot better. 💡
 
