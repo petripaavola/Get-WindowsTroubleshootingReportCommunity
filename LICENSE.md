@@ -1,3 +1,5 @@
+SPDX-License-Identifier: MIT
+
 MIT License
 
 Copyright (c) 2025 Petri Paavola
