@@ -78,9 +78,23 @@ Petri has helped thousands of IT pros automate and simplify log analysis — thi
 <a name="screenshots"></a>
 ## 🖼️ Screenshots
 
-> 📍 Screenshots
+> 📍 Real examples from the generated timeline report
 
-![Timeline Example](./images/KnownEvents.png)
+---
+
+### 🛠️ Known Events Timeline View
+
+<img src="./images/KnownEvents.png" alt="Known Events Timeline" width="600"/>
+
+---
+
+### 🔍 Intune App & Script GUIDs Translated
+
+<p align="left">
+  <img src="./images/Intune_Apps_GUIDs_to_real_names.png" alt="Intune App GUIDs" width="300"/>
+  &nbsp;
+  <img src="./images/Intune_script_GUIDs_to_real_names.png" alt="Intune Script GUIDs" width="300"/>
+</p>
 
 ---
 
