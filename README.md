@@ -84,17 +84,28 @@ Petri has helped thousands of IT pros automate and simplify log analysis — thi
 
 ### 🛠️ Known Events Timeline View
 
-<img src="./images/KnownEvents.png" alt="Known Events Timeline" width="600"/>
+[<img src="./images/KnownEvents.png" alt="Known Events Timeline" width="600"/>](./images/KnownEvents.png)
 
 ---
 
 ### 🔍 Intune App & Script GUIDs Translated
 
-<p align="left">
-  <img src="./images/Intune_Apps_GUIDs_to_real_names.png" alt="Intune App GUIDs" width="300"/>
-  &nbsp;
-  <img src="./images/Intune_script_GUIDs_to_real_names.png" alt="Intune Script GUIDs" width="300"/>
-</p>
+<table>
+  <tr>
+    <td align="center">
+      <strong>App GUIDs → Real App Names</strong><br/>
+      <a href="./images/Intune_Apps_GUIDs_to_real_names.png" target="_blank">
+        <img src="./images/Intune_Apps_GUIDs_to_real_names.png" alt="App GUIDs" width="300"/>
+      </a>
+    </td>
+    <td align="center">
+      <strong>Script GUIDs → Real Script Names</strong><br/>
+      <a href="./images/Intune_script_GUIDs_to_real_names.png" target="_blank">
+        <img src="./images/Intune_script_GUIDs_to_real_names.png" alt="Script GUIDs" width="300"/>
+      </a>
+    </td>
+  </tr>
+</table>
 
 ---
 
