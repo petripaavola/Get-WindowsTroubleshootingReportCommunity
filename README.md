@@ -82,9 +82,24 @@ Petri has helped thousands of IT pros automate and simplify log analysis — thi
 
 ---
 
-### 🛠️ Known Events Timeline View
+### 🧭 Known Events Timeline + Windows Update Trends
 
-[<img src="./images/KnownEvents.png" alt="Known Events Timeline" width="600"/>](./images/KnownEvents.png)
+<table>
+  <tr>
+    <td align="center">
+      <strong>Known Events Timeline View</strong><br/>
+      <a href="./images/KnownEvents.png" target="_blank">
+        <img src="./images/KnownEvents.png" alt="Known Events Timeline" width="300"/>
+      </a>
+    </td>
+    <td align="center">
+      <strong>365-Day Windows Update Trend</strong><br/>
+      <a href="./images/365_days_trend_WindowsUpdates_install.png" target="_blank">
+        <img src="./images/365_days_trend_WindowsUpdates_install.png" alt="365 Day Windows Update Trend" width="300"/>
+      </a>
+    </td>
+  </tr>
+</table>
 
 ---
 
