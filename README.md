@@ -10,7 +10,7 @@
 
 Forget siloed logs. This tool **redefines Windows and Intune troubleshooting** by doing what no other tool can:
 
-✅ Merge Event Logs (`.evtx`) and traditional `.log` files  
+✅ **Merge** Event Logs (`.evtx`) and traditional `.log` files  
 ✅ Present everything in a **single, chronological timeline**  
 ✅ Detect known issues using **community-driven rules**  
 ✅ Generate clean, interactive **HTML reports with filtering**  
@@ -279,6 +279,7 @@ No more digging through Intune manually. Just clear, meaningful names in the rep
 - Support for Intune and ConfigMgr **CMTrace-style .log** files
 - Experimental support for **Procmon CSV**
 - Future: CBS.log, DISM.log, .etl, etc.
+- If you have a need or use case for additional .log support, contact Petri
 
 ---
 
