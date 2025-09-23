@@ -1,0 +1,40 @@
+[
+	{
+		"CategoryName": "Intune - IME Autopilot Device Preparation",
+		"KnownEventRules": [
+			{
+				"CategoryName": "Intune - IME AutopilotDevicePreparation",
+				"LogType": ".log",
+				"LogFileName": "IntuneManagementExtension.log",
+				"Message": "[APv2] Device is in APv2 mode: True.",
+				"ToolTipText": "",
+				"Color": "Yellow",
+				"DeveloperNotes": "",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+      			"LinkToBlogArticle": ""
+			},
+			{
+				"CategoryName": "Intune - IME AutopilotDevicePreparation",
+				"LogType": ".log",
+				"LogFileName": "IntuneManagementExtension.log",
+				"Message": "[APv2] Attempting to disable APv2 mode for device.",
+				"ToolTipText": "",
+				"Color": "Yellow",
+				"DeveloperNotes": "",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+      			"LinkToBlogArticle": ""
+			},
+			{
+				"CategoryName": "Intune - IME AutopilotDevicePreparation",
+				"LogType": ".log",
+				"LogFileName": "IntuneManagementExtension.log",
+				"Message": "[APv2] Successfully disabled APv2 mode.",
+				"ToolTipText": "",
+				"Color": "Yellow",
+				"DeveloperNotes": "",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+      			"LinkToBlogArticle": ""
+			}
+		]
+	}
+]

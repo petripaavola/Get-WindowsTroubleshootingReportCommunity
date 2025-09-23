@@ -1,0 +1,88 @@
+[
+	{
+		"CategoryName": "Windows - Updates Download",
+		"KnownEventRules": [
+			{
+				"CategoryName": "Windows - Updates Download",
+				"LogType": ".evtx",
+				"Channel": "System-REMOVED-THIS CAUSES TOO MUCH INFORMATION WITHOUT UPDATE NAME",
+				"Id": 44,
+				"ProviderName": "Microsoft-Windows-WindowsUpdateClient",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": false,
+				"ToolTipText": "Windows Update started downloading an update.",
+				"Color": "Yellow",
+				"DeveloperNotes": "Windows Update started downloading an update."
+			},
+			{
+				"CategoryName": "Windows - Updates Download",
+				"LogType": ".evtx",
+				"Channel": "System",
+				"Id": 41,
+				"ProviderName": "Microsoft-Windows-WindowsUpdateClient",
+				"IncludeEventXMLDataInMessage": true,
+				"IncludeEventXMLDataInToolTip": true,
+				"ToolTipText": "An update was downloaded",
+				"Color": "Yellow",
+				"DeveloperNotes": "An update was downloaded. Need to include update name from xml"
+			}
+		]
+	},
+	{
+		"CategoryName": "Windows - Updates Install",
+		"KnownEventRules": [
+			{
+				"CategoryName": "Windows - Updates Install",
+				"LogType": ".evtx",
+				"Channel": "System",
+				"Id": 43,
+				"ProviderName": "Microsoft-Windows-WindowsUpdateClient",
+				"IncludeEventXMLDataInMessage": true,
+				"IncludeEventXMLDataInToolTip": false,
+				"ToolTipText": "Installation Started",
+				"Color": "Yellow",
+				"RemoveNewLinesFromLogMessage": true,
+				"DeveloperNotes": "Installation Started: Windows has started installing the following update: Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.417.507.0) - Current Channel (Broad)"
+			},
+			{
+				"CategoryName": "Windows - Updates Install",
+				"LogType": ".evtx",
+				"Channel": "System",
+				"Id": 19,
+				"ProviderName": "Microsoft-Windows-WindowsUpdateClient",
+				"IncludeEventXMLDataInMessage": true,
+				"IncludeEventXMLDataInToolTip": false,
+				"ToolTipText": "Installation Successful",
+				"Color": "Green",
+				"RemoveNewLinesFromLogMessage": true,
+				"DeveloperNotes": "Installation Successful: Windows successfully installed the following update: Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.417.507.0) - Current Channel (Broad)"
+			},
+			{
+				"CategoryName": "Windows - Updates Install",
+				"LogType": ".evtx",
+				"Channel": "System",
+				"Id": 20,
+				"ProviderName": "Microsoft-Windows-WindowsUpdateClient",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": false,
+				"ToolTipText": "Installation Failure",
+				"Color": "Red",
+				"DeveloperNotes": "Installation Failure: Windows failed to install the following update with error %1: %2.",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+				"LinkToBlogArticle": null
+			},
+			{
+				"CategoryName": "Windows - Updates Install",
+				"LogType": ".evtx",
+				"Channel": "Setup",
+				"Id": 2,
+				"ProviderName": "Microsoft-Windows-Servicing",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": false,
+				"ToolTipText": "",
+				"Color": "",
+				"DeveloperNotes": "Package KB5042099 was successfully changed to the Installed state."
+			}
+		]
+	}
+]

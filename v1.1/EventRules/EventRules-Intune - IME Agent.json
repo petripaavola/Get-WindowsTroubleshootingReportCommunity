@@ -1,0 +1,29 @@
+[
+    {
+		"CategoryName": "Intune - IME Agent Start-Stop",
+		"KnownEventRules": [
+			{
+				"CategoryName": "Intune - IME Agent Start-Stop",
+				"LogType": ".log",
+				"LogFileName": "IntuneManagementExtension.log",
+				"Message": "EMS Agent Started",
+				"ToolTipText": "",
+				"Color": "Yellow",
+				"DeveloperNotes": "",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+      			"LinkToBlogArticle": ""
+			},
+			{
+				"CategoryName": "Intune - IME Agent Start-Stop",
+				"LogType": ".log",
+				"LogFileName": "IntuneManagementExtension.log",
+				"Message": "EMS Agent Stopped",
+				"ToolTipText": "",
+				"Color": "Yellow",
+				"DeveloperNotes": "",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+      			"LinkToBlogArticle": ""
+			}
+		]
+	}
+]

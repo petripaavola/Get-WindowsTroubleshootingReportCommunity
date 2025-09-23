@@ -1,0 +1,45 @@
+[
+	{
+		"CategoryName": "Example category",
+		"KnownEventRules": [
+			{
+				"CategoryName": "Example category",
+				"LogType": ".evtx",
+				"Channel": "ExampleApplication",
+				"Id": 1033,
+				"ProviderName": "MsiInstaller",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": false,
+				"ToolTipText": "Windows Installer installed the product.",
+				"DeveloperNotes": "Windows Installer installed the product. Product Name: Mozilla Firefox 130.0 x64 en-US. Product Version: 130.0.0.0. Product Language: 0. Manufacturer: Mozilla. Installation success or error status: 0.",
+				"Author": "This_could_be.You@company.com",
+				"LinkToBlogArticle": null
+			},
+			{
+				"CategoryName": "Example category",
+				"LogType": ".evtx",
+				"Channel": "ExampleApplication",
+				"Id": 1034,
+				"ProviderName": "MsiInstaller",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": false,
+				"Category": "Application installation",
+				"ToolTipText": "Windows Installer removed the product.",
+				"DeveloperNotes": "Windows Installer removed the product. Product Name: Microsoft Teams Meeting Add-in for Microsoft Office. Product Version: 1.24.19202. Product Language: 1033. Manufacturer: Microsoft. Removal success or error status: 0.",
+				"Author": "This_could_be.You@company.com",
+				"LinkToBlogArticle": null
+			},
+			{
+				"CategoryName": "Example category",
+				"LogType": ".log",
+				"LogFileName": "Example.log",
+				"Message": "Example text to search",
+				"ToolTipText": "This text is shown on event ToolTip when hovering on top event text",
+				"Color": "Green",
+				"DeveloperNotes": "This is Intune Powershell script body as is",
+				"Author": "This_could_be.You@company.com",
+				"LinkToBlogArticle": null
+			}
+		]
+	}
+]

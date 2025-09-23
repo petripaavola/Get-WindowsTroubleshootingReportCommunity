@@ -1,0 +1,29 @@
+[
+	{
+		"CategoryName": "Windows - Powershell logging",
+		"KnownEventRules": [
+			{
+				"CategoryName": "Windows - Powershell logging",
+				"LogType": ".evtx",
+				"Channel": "Microsoft-Windows-PowerShell/Operational",
+				"Id": 4100,
+				"ProviderName": "Microsoft-Windows-PowerShell",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": false,
+				"ToolTipText": "Running Powershell script",
+				"DeveloperNotes": "This shows that Powershell script is running without showing Powershell code"
+			},
+			{
+				"CategoryName": "Windows - Powershell logging",
+				"LogType": ".evtx",
+				"Channel": "Microsoft-Windows-PowerShell/Operational",
+				"Id": 4104,
+				"ProviderName": "Microsoft-Windows-PowerShell",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": false,
+				"ToolTipText": "Running Powershell script block",
+				"DeveloperNotes": "This shows actual Powershell code that is running"
+			}
+		]
+	}
+]

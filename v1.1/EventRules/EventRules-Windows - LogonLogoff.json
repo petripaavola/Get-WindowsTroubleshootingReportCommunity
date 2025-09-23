@@ -1,0 +1,64 @@
+[
+	{
+		"CategoryName": "Windows - LogonLogoff",
+		"KnownEventRules": [
+			{
+				"CategoryName": "Windows - LogonLogoff",
+				"LogType": ".evtx",
+				"Channel": "Security",
+				"Id": 4647,
+				"ProviderName": "Microsoft-Windows-User Profiles Service",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": false,
+				"ToolTipText": "User logged off",
+				"Color": "White",
+				"DeveloperNotes": "User initiated logoff:"
+			},
+			{
+				"CategoryName": "Windows - LogonLogoff",
+				"LogType": ".evtx",
+				"Channel": "Microsoft-Windows-User Profile Service/Operational",
+				"Id": 67,
+				"ProviderName": "Microsoft-Windows-User Profiles Service",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": false,
+				"ToolTipText": "Logon type: Regular...",
+				"Color": "White",
+				"DeveloperNotes": "Logon event"
+			},
+			{
+				"CategoryName": "Windows - LogonLogoff",
+				"LogType": ".evtx",
+				"Channel": "Microsoft-Windows-User Profile Service/Operational",
+				"Id": 4,
+				"ProviderName": "Microsoft-Windows-User Profiles Service",
+				"IncludeEventXMLDataInMessage": false,
+				"IncludeEventXMLDataInToolTip": false,
+				"ToolTipText": "Finished processing user logoff notification on session.",
+				"DeveloperNotes": "Finished processing user logoff notification on session 1."
+			},
+			{
+				"CategoryName": "Windows - LogonLogoff",
+				"LogType": ".log",
+				"LogFileName": "execmgr.log",
+				"Message": "A user has logged on.",
+				"ToolTipText": "",
+				"Color": "Yellow",
+				"DeveloperNotes": "",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+				"LinkToBlogArticle": null
+			},
+			{
+				"CategoryName": "Windows - LogonLogoff",
+				"LogType": ".log",
+				"LogFileName": "execmgr.log",
+				"Message": "The logged on user is - THIS RULE IS DISABLED BECAUSE CAN WE SHOW USERNAME ?",
+				"ToolTipText": "",
+				"Color": "Yellow",
+				"DeveloperNotes": "The logged on user is DOMAIN\\username",
+				"Author": "Petri.Paavola@yodamiitti.fi / Microsoft MVP - Windows and Intune",
+				"LinkToBlogArticle": null
+			}
+		]
+	}
+]
