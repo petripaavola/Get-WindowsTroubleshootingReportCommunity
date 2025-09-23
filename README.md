@@ -1,6 +1,6 @@
-# 🧠 Get-WindowsTroubleshootingReportCommunity v1.0
+# 🧠 Get-WindowsTroubleshootingReportCommunity v1.1
 
-![Version](https://img.shields.io/badge/version-1.0-blue.svg)
+![Version](https://img.shields.io/badge/version-1.1-blue.svg)
 ![PowerShell](https://img.shields.io/badge/PowerShell-5.1%20%7C%207.x-blue.svg)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
@@ -31,13 +31,14 @@ Petri has helped thousands of IT pros automate and simplify log analysis — thi
 
 ---
 
-📦 [**Download the Tool v1.0**](./Get-WindowsTroubleshootingReportCommunity_v1.0.zip) and start seeing the full story in your logs.
+📦 [**Download the Tool v1.1**](./v1.1/Get-WindowsTroubleshootingReportCommunity_v1.1.zip) and start seeing the full story in your logs.
 
 ---
 
 <a name="table-of-contents"></a>
 ## Table of Contents 📚
 
+- [What's New (v1.1)](#whats-new-v11)
 - [What's New (v1.0)](#whats-new-v10)
 - [Screenshots](#screenshots)
 - [Video Demo](#video-demo) 
@@ -56,6 +57,20 @@ Petri has helped thousands of IT pros automate and simplify log analysis — thi
 - [License](#license)
 - [Contributors](#contributors)
 - [Acknowledgments](#acknowledgments)
+
+---
+
+<a name="whats-new-v11"></a>
+## 🆕 What's New (v1.1)
+
+**🎉 First Public Release! (Finally 😀) - This time for real**
+
+> Please report bugs or suggestions via [GitHub Issues](../../issues).
+
+### Changelog Highlights
+
+- Bug Fixes
+- More KnownEventRules created
 
 ---
 
@@ -150,22 +165,22 @@ Petri has helped thousands of IT pros automate and simplify log analysis — thi
 
 ```powershell
 # Get only KNOWN Events. KnownEvents categories and time range is selected from graphical UI
-./Get-WindowsTroubleshootingReportCommunity_v1.0.ps1
+./Get-WindowsTroubleshootingReportCommunity_v1.1.ps1
 
 # Get ALL Events. KnownEvents categories, Event logs and log files and time range is selected from graphical UI
-./Get-WindowsTroubleshootingReportCommunity_v1.0.ps1 -AllEvents
+./Get-WindowsTroubleshootingReportCommunity_v1.1.ps1 -AllEvents
 
 # From folder with known events only
-./Get-WindowsTroubleshootingReportCommunity_v1.0.ps1 -LogFilesFolder "C:\Logs\DiagLogs-COMPUTERNAME"
+./Get-WindowsTroubleshootingReportCommunity_v1.1.ps1 -LogFilesFolder "C:\Logs\DiagLogs-COMPUTERNAME"
 
 # From folder with ALL events
-./Get-WindowsTroubleshootingReportCommunity_v1.0.ps1 -LogFilesFolder "C:\Logs\DiagLogs-COMPUTERNAME" -AllEvents
+./Get-WindowsTroubleshootingReportCommunity_v1.1.ps1 -LogFilesFolder "C:\Logs\DiagLogs-COMPUTERNAME" -AllEvents
 
 # Known events between two times
-./Get-WindowsTroubleshootingReportCommunity_v1.0.ps1 -LogFilesFolder "C:\Logs\DiagLogs-COMPUTERNAME" -StartTime "2024-12-02 08:00:00" -EndTime "2024-12-02 18:00:00"
+./Get-WindowsTroubleshootingReportCommunity_v1.1.ps1 -LogFilesFolder "C:\Logs\DiagLogs-COMPUTERNAME" -StartTime "2024-12-02 08:00:00" -EndTime "2024-12-02 18:00:00"
 
 # All events between two times
-./Get-WindowsTroubleshootingReportCommunity_v1.0.ps1 -LogFilesFolder "C:\Logs\DiagLogs-COMPUTERNAME" -StartTime "2024-12-02 08:00:00" -EndTime "2024-12-02 18:00:00" -AllEvents
+./Get-WindowsTroubleshootingReportCommunity_v1.1.ps1 -LogFilesFolder "C:\Logs\DiagLogs-COMPUTERNAME" -StartTime "2024-12-02 08:00:00" -EndTime "2024-12-02 18:00:00" -AllEvents
 ```
 
 ---
