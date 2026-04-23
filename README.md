@@ -5,7 +5,12 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ---
+> [!IMPORTANT]
+> 🚀 **You will want the latest and greatest – use the Dev version (v3.0)!**  
+> The Dev version includes new features and fixes **before they reach the official release (v1.1)**.  
+> 👉 [**Download Dev version 3.0 here**](./DeveloperVersion/README.md)
 
+---
 ## 🔥 The First Tool That Combines Windows Event Logs + .log Files into a Single Unified Timeline Report
 
 Forget siloed logs. This tool **redefines Windows and Intune troubleshooting** by doing what no other tool can:
