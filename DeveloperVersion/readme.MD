@@ -5,4 +5,4 @@ They may not be 100% polished so that's why it is still here in Developer Sectio
 
 ## Current Developer version is 1.01
 
-📦 [**Download Developer version v1.01**](./Get-WindowsTroubleshootingReportCommunity_v1.01_DEV.zip)
+📦 [**Download Developer version v3.0**](./Get-WindowsTroubleshootingReportCommunity-v3.0-DEV.zip)
